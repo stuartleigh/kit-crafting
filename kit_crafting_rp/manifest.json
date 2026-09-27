@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Kit Crafting Resources",
+    "description": "Models and textures for Kit Crafting.",
+    "uuid": "228910ec-84f6-4c04-ba7e-54448a9926a5",
+    "version": [
+      1,
+      0,
+      3
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "0aea27eb-a65d-4b30-8164-d3ae609002b3",
+      "version": [
+        1,
+        0,
+        3
+      ],
+      "description": "Kit Crafting resource data"
+    }
+  ]
+}
