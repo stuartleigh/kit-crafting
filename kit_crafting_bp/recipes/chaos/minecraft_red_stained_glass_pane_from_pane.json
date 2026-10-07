@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_red_stained_glass_pane_from_pane"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_glass_pane",
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass_pane"
+      },
+      "X": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glass_pane"
+      },
+      {
+        "item": "minecraft:red_dye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_dce5ab106a0d5f2c",
+      "count": 1
+    }
+  }
+}

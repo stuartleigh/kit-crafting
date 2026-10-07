@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_glass_pane"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_35c89de9e3d763d4",
+      "count": 1
+    }
+  }
+}

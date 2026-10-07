@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_sulfur"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:sulfur_spike"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:sulfur_spike"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b45ac24ecc5444ff",
+      "count": 1
+    }
+  }
+}

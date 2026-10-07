@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_candle"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "candle",
+    "pattern": [
+      "S",
+      "H"
+    ],
+    "key": {
+      "H": {
+        "item": "minecraft:honeycomb"
+      },
+      "S": {
+        "item": "minecraft:string"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:string"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_87184750c56003a8",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

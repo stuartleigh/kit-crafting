@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_magenta_carpet_from_white"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:white_carpet"
+      },
+      "X": {
+        "item": "minecraft:magenta_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_carpet"
+      },
+      {
+        "item": "minecraft:magenta_dye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_666a2649b12c0af7",
+      "count": 1
+    }
+  }
+}

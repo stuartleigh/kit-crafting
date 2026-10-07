@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_redstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:redstone_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:redstone_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_80ba0c29ca2a7895",
+      "count": 1
+    }
+  }
+}

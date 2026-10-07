@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_grindstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "|_|",
+      "# #"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "tag": "minecraft:planks"
+      },
+      "_": {
+        "item": "minecraft:normal_stone_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:normal_stone_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_11916fea219a49a0",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

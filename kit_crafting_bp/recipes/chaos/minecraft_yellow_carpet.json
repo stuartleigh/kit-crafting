@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_yellow_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:yellow_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:yellow_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4a2f5f057e6eff56",
+      "count": 1
+    }
+  }
+}

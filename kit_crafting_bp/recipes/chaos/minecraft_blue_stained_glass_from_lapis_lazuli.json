@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_blue_stained_glass_from_lapis_lazuli"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_glass",
+    "priority": 1,
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:lapis_lazuli"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_01f3a2dcaacd1c1e",
+      "count": 1
+    }
+  }
+}

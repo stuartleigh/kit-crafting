@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crimson_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_stairs",
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:crimson_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:crimson_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_da1f2fff4e7d041c",
+      "count": 1
+    }
+  }
+}

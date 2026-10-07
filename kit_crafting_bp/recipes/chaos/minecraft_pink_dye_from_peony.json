@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pink_dye_from_peony"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "pink_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:peony"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:peony"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ebbc031348282168",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_daylight_detector_from_mangrove_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB",
+      "CCC"
+    ],
+    "key": {
+      "A": {
+        "item": "glass"
+      },
+      "B": {
+        "item": "quartz"
+      },
+      "C": {
+        "item": "mangrove_slab"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_acca997035357438",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

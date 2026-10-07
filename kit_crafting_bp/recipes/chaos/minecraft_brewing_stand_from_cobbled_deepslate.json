@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_brewing_stand_from_cobbled_deepslate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " B ",
+      "###"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:blaze_rod"
+      },
+      "#": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_9336a7963de82fbc",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

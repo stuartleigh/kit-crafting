@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pink_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:pink_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:pink_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fa662e3f74ddbf3d",
+      "count": 1
+    }
+  }
+}

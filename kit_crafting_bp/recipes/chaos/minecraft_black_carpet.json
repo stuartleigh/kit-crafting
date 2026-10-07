@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_black_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:black_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:black_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9a660e6758b28990",
+      "count": 1
+    }
+  }
+}

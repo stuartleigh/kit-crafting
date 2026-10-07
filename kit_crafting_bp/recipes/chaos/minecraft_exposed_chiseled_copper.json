@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_exposed_chiseled_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:exposed_cut_copper_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:exposed_cut_copper_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8943c40d37354c6e",
+      "count": 1
+    }
+  }
+}

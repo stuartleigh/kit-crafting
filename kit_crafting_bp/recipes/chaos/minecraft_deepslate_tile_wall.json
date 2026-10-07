@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_deepslate_tile_wall"
+    },
+    "key": {
+      "#": {
+        "item": "minecraft:deepslate_tiles"
+      }
+    },
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "priority": 1,
+    "result": {
+      "item": "kit_crafting:chaos_result_b3ef23e7e736d3ce",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:deepslate_tiles"
+      }
+    ],
+    "tags": [
+      "kit_crafting_chaos"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_saddle"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " # ",
+      "#I#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:leather"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:leather"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_536920c98c76b301",
+      "count": 1
+    }
+  }
+}

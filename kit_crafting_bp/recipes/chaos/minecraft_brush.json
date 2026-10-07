@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_brush"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "#",
+      "|"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:feather"
+      },
+      "#": {
+        "item": "minecraft:copper_ingot"
+      },
+      "|": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:copper_ingot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_be1f414366cfd5c9",
+      "count": 1
+    }
+  }
+}

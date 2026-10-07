@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dark_oak_shelf_from_stripped_dark_oak_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "   ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_dark_oak_log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_dark_oak_log"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_85b5923f34a2efe3",
+      "count": 1
+    }
+  }
+}

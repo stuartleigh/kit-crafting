@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bookshelf_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "crimson_planks"
+      },
+      "B": {
+        "item": "book"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_b723f62c3639e3a8",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

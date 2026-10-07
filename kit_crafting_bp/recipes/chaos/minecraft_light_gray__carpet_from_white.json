@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_light_gray__carpet_from_white"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:white_carpet"
+      },
+      "X": {
+        "item": "minecraft:light_gray_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_carpet"
+      },
+      {
+        "item": "minecraft:light_gray_dye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_7f7922c5c939f70c",
+      "count": 1
+    }
+  }
+}

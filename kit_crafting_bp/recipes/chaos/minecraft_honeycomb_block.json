@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_honeycomb_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XX",
+      "XX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:honeycomb"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "result": [
+      {
+        "item": "kit_crafting:chaos_result_028393815f11724e",
+        "count": 1
+      }
+    ]
+  }
+}

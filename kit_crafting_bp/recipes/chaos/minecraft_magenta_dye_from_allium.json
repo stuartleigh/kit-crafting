@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_magenta_dye_from_allium"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "magenta_dye",
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "minecraft:allium"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:allium"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b25d753e4709d40f",
+      "count": 1
+    }
+  }
+}

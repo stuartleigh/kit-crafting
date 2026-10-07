@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_soul_campfire_from_soul_soil_and_stripped_birch_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " A ",
+      "ABA",
+      "CCC"
+    ],
+    "key": {
+      "A": {
+        "item": "stick"
+      },
+      "B": {
+        "item": "soul_soil"
+      },
+      "C": {
+        "item": "stripped_birch_log"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_621d9d635007808e",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

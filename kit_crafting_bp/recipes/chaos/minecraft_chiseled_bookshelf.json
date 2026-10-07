@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_bookshelf"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "tag": "minecraft:planks"
+      },
+      "B": {
+        "tag": "minecraft:wooden_slabs"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:book"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d819032c0aa2da46",
+      "count": 1
+    }
+  }
+}

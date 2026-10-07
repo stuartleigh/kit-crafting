@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_brown_stained_glass_from_cocoa_beans"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_glass",
+    "priority": 1,
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:cocoa_beans"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e42bdc63f4abb5de",
+      "count": 1
+    }
+  }
+}

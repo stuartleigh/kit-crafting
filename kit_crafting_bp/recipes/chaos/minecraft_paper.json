@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_paper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:reeds"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:reeds"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fbc2e60d44960dc4",
+      "count": 1
+    }
+  }
+}

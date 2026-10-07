@@ -6,8 +6,8 @@
     "uuid": "4f3418fb-fd58-4327-9abc-a57a2cd452ba",
     "version": [
       1,
-      0,
-      3
+      1,
+      0
     ],
     "min_engine_version": [
       1,
@@ -21,10 +21,22 @@
       "uuid": "a06f0509-d7d5-4ab0-97cf-581231054618",
       "version": [
         1,
-        0,
-        3
+        1,
+        0
       ],
       "description": "Kit Crafting behavior data"
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "ac26d8fa-687b-425d-b34f-360b3a8c7095",
+      "version": [
+        1,
+        1,
+        0
+      ],
+      "entry": "scripts/main.js",
+      "description": "Kit Crafting chaos rewards"
     }
   ],
   "dependencies": [
@@ -32,9 +44,13 @@
       "uuid": "228910ec-84f6-4c04-ba7e-54448a9926a5",
       "version": [
         1,
-        0,
-        3
+        1,
+        0
       ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
     }
   ]
 }

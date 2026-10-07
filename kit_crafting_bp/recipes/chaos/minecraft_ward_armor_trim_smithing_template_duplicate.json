@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_ward_armor_trim_smithing_template_duplicate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#S#",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:ward_armor_trim_smithing_template"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:ward_armor_trim_smithing_template"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_652cdd7212d8935e",
+      "count": 1
+    }
+  }
+}

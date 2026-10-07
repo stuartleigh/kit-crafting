@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_kit_crafting_blast_furnace"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "III",
+      "ICI",
+      "IFI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:fire_charge"
+      },
+      "F": {
+        "item": "minecraft:furnace"
+      }
+    },
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_fc7959a30fd0b3e2",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

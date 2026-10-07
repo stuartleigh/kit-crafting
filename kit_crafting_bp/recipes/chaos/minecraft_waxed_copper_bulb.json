@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxed_copper_bulb"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " # ",
+      "#B#",
+      " R "
+    ],
+    "key": {
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "#": {
+        "item": "minecraft:waxed_copper"
+      },
+      "B": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:waxed_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_27dc6df0ca3d913b",
+      "count": 1
+    }
+  }
+}

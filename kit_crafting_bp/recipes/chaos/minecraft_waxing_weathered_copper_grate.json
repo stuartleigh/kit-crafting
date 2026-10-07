@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_weathered_copper_grate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:weathered_copper_grate"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:weathered_copper_grate"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d17a537d9a784e45",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_pickaxe_from_cobbled_deepslate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XXX",
+      " # ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_2c9dd47e72bcba5c",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

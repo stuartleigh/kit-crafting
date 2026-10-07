@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_exposed_copper_lantern"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:exposed_copper_lantern"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:copper_lantern"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0198a665a17b590c",
+      "count": 1
+    }
+  }
+}

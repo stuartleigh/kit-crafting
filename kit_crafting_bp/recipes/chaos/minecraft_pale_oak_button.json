@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pale_oak_button"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:pale_oak_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:pale_oak_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8a5412b1b656421e",
+      "count": 1
+    }
+  }
+}

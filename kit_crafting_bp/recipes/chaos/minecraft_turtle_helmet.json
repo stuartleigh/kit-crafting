@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_turtle_helmet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XXX",
+      "X X"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:turtle_shell_piece"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:turtle_shell_piece"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4e3bcfd5667503c3",
+      "count": 1
+    }
+  }
+}

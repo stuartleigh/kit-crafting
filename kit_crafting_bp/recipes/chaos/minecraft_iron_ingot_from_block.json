@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_iron_ingot_from_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "iron_ingot",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_1f27299c3a13688d",
+      "count": 1
+    }
+  }
+}

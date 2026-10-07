@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_melon_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "MMM",
+      "MMM",
+      "MMM"
+    ],
+    "key": {
+      "M": {
+        "item": "minecraft:melon"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b6cd878d30bd055d",
+      "count": 1
+    }
+  }
+}

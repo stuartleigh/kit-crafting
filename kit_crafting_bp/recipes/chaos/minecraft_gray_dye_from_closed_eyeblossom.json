@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_gray_dye_from_closed_eyeblossom"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "gray_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:closed_eyeblossom"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:closed_eyeblossom"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_de3b9620f59bf20b",
+      "count": 1
+    }
+  }
+}

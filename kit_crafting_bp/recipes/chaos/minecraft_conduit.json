@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_conduit"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:nautilus_shell"
+      },
+      "X": {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:nautilus_shell"
+      },
+      {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f640bf338501ea9b",
+      "count": 1
+    }
+  }
+}

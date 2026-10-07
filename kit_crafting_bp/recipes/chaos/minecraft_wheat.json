@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_wheat"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:hay_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:hay_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_532beeb9f2a91f4b",
+      "count": 1
+    }
+  }
+}

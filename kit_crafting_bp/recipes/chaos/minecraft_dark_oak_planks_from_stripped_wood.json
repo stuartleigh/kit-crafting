@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dark_oak_planks_from_stripped_wood"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_dark_oak_wood"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_dark_oak_wood"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ec9e9b4cc6a7f8fa",
+      "count": 1
+    }
+  }
+}

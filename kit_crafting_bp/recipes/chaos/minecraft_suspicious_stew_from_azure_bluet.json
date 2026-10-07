@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_suspicious_stew_from_azure_bluet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:azure_bluet"
+      }
+    ],
+    "unlock": {
+      "context": "None"
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_d9ee8aa68fb4bc71",
+      "count": 1
+    }
+  }
+}

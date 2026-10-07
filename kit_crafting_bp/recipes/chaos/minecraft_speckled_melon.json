@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_speckled_melon"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_nugget"
+      },
+      "X": {
+        "item": "minecraft:melon"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c73009716b6950ab",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_smithing_table_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AA",
+      "BB",
+      "BB"
+    ],
+    "key": {
+      "A": {
+        "item": "iron_ingot"
+      },
+      "B": {
+        "item": "crimson_planks"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_2968be6ff4b0d6b2",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_hopper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "I I",
+      "ICI",
+      " I "
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f0578d78d9f5bc75",
+      "count": 1
+    }
+  }
+}

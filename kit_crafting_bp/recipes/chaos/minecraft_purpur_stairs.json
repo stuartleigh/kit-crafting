@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_purpur_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:purpur_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:purpur_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_22c04a4b2c41eaef",
+      "count": 1
+    }
+  }
+}

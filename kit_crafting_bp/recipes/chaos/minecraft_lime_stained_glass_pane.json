@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lime_stained_glass_pane"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_glass_pane",
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:lime_stained_glass"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:lime_stained_glass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_18206c56e6b51277",
+      "count": 1
+    }
+  }
+}

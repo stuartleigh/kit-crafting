@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lectern_from_warped_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      " B ",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "warped_slab"
+      },
+      "B": {
+        "item": "bookshelf"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_ca7aeff3199dff92",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

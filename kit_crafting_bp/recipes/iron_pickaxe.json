@@ -20,11 +20,9 @@
         "item": "minecraft:stick"
       }
     },
-    "unlock": [
-      {
-        "item": "AlwaysUnlocked"
-      }
-    ],
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
     "result": {
       "item": "minecraft:iron_pickaxe"
     },

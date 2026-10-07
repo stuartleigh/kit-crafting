@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_oak_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:oak_log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:oak_log"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c73a2492c0e38a91",
+      "count": 1
+    }
+  }
+}

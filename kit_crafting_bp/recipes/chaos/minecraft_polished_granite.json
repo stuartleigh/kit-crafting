@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_granite"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "SS",
+      "SS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:granite"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:granite"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4983cb3ad3997ac7",
+      "count": 1
+    }
+  }
+}

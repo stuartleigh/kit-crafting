@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_hopper_minecart"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:hopper"
+      },
+      {
+        "item": "minecraft:minecart"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:minecart"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8a882c9519ba134c",
+      "count": 1
+    }
+  }
+}

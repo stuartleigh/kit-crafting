@@ -1,0 +1,28 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_cinnabar_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_cinnabar"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_cinnabar"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f48660ecca67387b",
+      "count": 1
+    }
+  }
+}

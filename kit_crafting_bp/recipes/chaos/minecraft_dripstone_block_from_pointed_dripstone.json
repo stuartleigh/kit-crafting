@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dripstone_block_from_pointed_dripstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XX",
+      "XX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:pointed_dripstone"
+      }
+    },
+    "result": [
+      {
+        "item": "kit_crafting:chaos_result_42dddf95913606f4",
+        "count": 1
+      }
+    ]
+  }
+}

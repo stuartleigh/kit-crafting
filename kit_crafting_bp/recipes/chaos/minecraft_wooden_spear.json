@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_wooden_spear"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "  X",
+      " # ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_a6c2d239651880e8",
+      "count": 1
+    }
+  }
+}

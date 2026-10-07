@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_acacia_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_stairs",
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:acacia_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:acacia_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c7e3bbe57b4bed17",
+      "count": 1
+    }
+  }
+}

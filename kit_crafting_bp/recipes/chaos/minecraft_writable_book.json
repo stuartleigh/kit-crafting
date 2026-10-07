@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_writable_book"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:book"
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 0
+      },
+      {
+        "item": "minecraft:feather"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:book"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3323b131206a5816",
+      "count": 1
+    }
+  }
+}

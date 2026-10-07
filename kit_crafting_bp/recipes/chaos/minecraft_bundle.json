@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bundle"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "#"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:string"
+      },
+      "#": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_ce0d3a75ab7e10d0",
+      "count": 1
+    },
+    "priority": 1,
+    "unlock": [
+      {
+        "item": "minecraft:leather"
+      },
+      {
+        "item": "minecraft:string"
+      }
+    ]
+  }
+}

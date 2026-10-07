@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crafting_table_waxed_weathered_cut_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:waxed_weathered_copper"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:waxed_weathered_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f1789f4725ff46cf",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

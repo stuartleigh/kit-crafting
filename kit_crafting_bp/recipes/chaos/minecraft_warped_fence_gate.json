@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_warped_fence_gate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_fence_gate",
+    "pattern": [
+      "#W#",
+      "#W#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "W": {
+        "item": "minecraft:warped_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:warped_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e2fc7129acbacd99",
+      "count": 1
+    }
+  }
+}

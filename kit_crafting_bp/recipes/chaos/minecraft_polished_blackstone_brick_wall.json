@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_blackstone_brick_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_blackstone_bricks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_blackstone_bricks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8f49b6b63ebd0871",
+      "count": 1
+    }
+  }
+}

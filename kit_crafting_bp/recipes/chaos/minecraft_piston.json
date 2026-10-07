@@ -1,0 +1,40 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_piston"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BCB",
+      "BDB"
+    ],
+    "key": {
+      "A": {
+        "tag": "minecraft:planks"
+      },
+      "B": {
+        "item": "cobblestone"
+      },
+      "C": {
+        "item": "iron_ingot"
+      },
+      "D": {
+        "item": "redstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b2bb6173e6572e74",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

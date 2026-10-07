@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dried_kelp"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:dried_kelp_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dried_kelp_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_2446cb932d84bd53",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_weathered_chiseled_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:weathered_cut_copper_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:weathered_cut_copper_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f13392515b578544",
+      "count": 1
+    }
+  }
+}

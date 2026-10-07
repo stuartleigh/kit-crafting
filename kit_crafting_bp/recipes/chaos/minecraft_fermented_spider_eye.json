@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_fermented_spider_eye"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:spider_eye"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:sugar"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:spider_eye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e5dd8e20a964fb9c",
+      "count": 1
+    }
+  }
+}

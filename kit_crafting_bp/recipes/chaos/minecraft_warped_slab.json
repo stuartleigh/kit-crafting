@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_warped_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:warped_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:warped_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_5e300a2948dc22a0",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_diamond"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:diamond_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:diamond_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_70c718b72869f7ff",
+      "count": 1
+    }
+  }
+}

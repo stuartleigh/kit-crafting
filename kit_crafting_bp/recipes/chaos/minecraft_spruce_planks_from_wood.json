@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_spruce_planks_from_wood"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:spruce_wood"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:spruce_wood"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_03479f91f67f2255",
+      "count": 1
+    }
+  }
+}

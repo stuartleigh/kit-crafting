@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_mangrove_boat"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "# #",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:mangrove_planks",
+        "data": 4
+      }
+    },
+    "unlock": {
+      "context": "PlayerInWater"
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_2aa92c808d1977f8",
+      "count": 1
+    }
+  }
+}

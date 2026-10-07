@@ -17,11 +17,9 @@
         "item": "minecraft:netherite_block"
       }
     },
-    "unlock": [
-      {
-        "item": "AlwaysUnlocked"
-      }
-    ],
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
     "result": {
       "item": "kit_crafting:netherite_stairs",
       "count": 4

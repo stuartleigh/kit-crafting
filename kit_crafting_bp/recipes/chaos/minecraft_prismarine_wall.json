@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_prismarine_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:prismarine",
+        "data": 0
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:prismarine",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f73fd72348b151bc",
+      "count": 1
+    }
+  }
+}

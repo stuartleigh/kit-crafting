@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_wayfinder_armor_trim_smithing_template_duplicate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#S#",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:wayfinder_armor_trim_smithing_template"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "minecraft:hardened_clay"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:wayfinder_armor_trim_smithing_template"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_06b5c3983df25e5b",
+      "count": 1
+    }
+  }
+}

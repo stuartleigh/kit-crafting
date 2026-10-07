@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_tuff_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_tuff"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_tuff"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fe7c28eb7c1c02d5",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_brick_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stone_bricks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stone_bricks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_2c14170f790c6519",
+      "count": 1
+    }
+  }
+}

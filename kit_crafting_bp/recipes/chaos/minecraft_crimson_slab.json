@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crimson_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:crimson_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:crimson_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3b8c498fdf58d24d",
+      "count": 1
+    }
+  }
+}

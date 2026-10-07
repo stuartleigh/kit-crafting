@@ -6,6 +6,15 @@
   "texture_data": {
     "kit_crafting_netherite_block": {
       "textures": "textures/blocks/netherite_block"
+    },
+    "kit_crafting_chaos_top": {
+      "textures": "textures/blocks/chaos_table_top"
+    },
+    "kit_crafting_chaos_side": {
+      "textures": "textures/blocks/crafting_table_side"
+    },
+    "kit_crafting_chaos_bottom": {
+      "textures": "textures/blocks/planks_oak"
     }
   }
 }

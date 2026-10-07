@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_shield_from_warped_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "ABA",
+      "AAA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "warped_planks"
+      },
+      "B": {
+        "item": "iron_ingot"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_3d4308c8ba78c690",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

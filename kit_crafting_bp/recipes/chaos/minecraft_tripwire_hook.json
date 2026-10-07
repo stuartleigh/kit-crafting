@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_tripwire_hook"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A",
+      "B",
+      "C"
+    ],
+    "key": {
+      "A": {
+        "item": "iron_ingot"
+      },
+      "B": {
+        "item": "stick"
+      },
+      "C": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_cdbf129c23d34f30",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

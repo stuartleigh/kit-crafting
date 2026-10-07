@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_resin_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:resin_brick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:resin_brick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fde6ed913d73660f",
+      "count": 1
+    }
+  }
+}

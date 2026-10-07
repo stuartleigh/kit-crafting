@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_sulfur_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "##",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_sulfur"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_sulfur"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e2a2d48c44807a34",
+      "count": 1
+    }
+  }
+}

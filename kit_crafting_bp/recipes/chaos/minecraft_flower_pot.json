@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_flower_pot"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "# #",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:brick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:brick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_a16fda94b6aaebc3",
+      "count": 1
+    }
+  }
+}

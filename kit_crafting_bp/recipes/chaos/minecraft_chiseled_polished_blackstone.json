@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_polished_blackstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_blackstone_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_blackstone_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_eeddfd90420a72b8",
+      "count": 1
+    }
+  }
+}

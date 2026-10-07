@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bone_meal_from_bone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "bonemeal",
+    "ingredients": [
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_5cc3b98123b55fb8",
+      "count": 1
+    }
+  }
+}

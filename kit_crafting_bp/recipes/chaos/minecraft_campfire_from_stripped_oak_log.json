@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_campfire_from_stripped_oak_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " | ",
+      "|C|",
+      "###"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "item": "minecraft:stripped_oak_log"
+      },
+      "C": {
+        "item": "minecraft:coal"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_533f781f509d3a25",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

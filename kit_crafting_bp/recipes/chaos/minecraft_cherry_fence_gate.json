@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_cherry_fence_gate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_fence_gate",
+    "pattern": [
+      "#W#",
+      "#W#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "W": {
+        "item": "minecraft:cherry_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cherry_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3309ed7595ff1662",
+      "count": 1
+    }
+  }
+}

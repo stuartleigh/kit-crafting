@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_acacia_door"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_door",
+    "pattern": [
+      "##",
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:acacia_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:acacia_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_177f40c2beafd270",
+      "count": 1
+    }
+  }
+}

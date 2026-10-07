@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_resin_clump_from_resin_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:resin_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:resin_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8d42e0475bba2100",
+      "count": 1
+    }
+  }
+}

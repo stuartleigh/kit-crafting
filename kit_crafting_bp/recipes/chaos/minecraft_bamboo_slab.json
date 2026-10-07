@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bamboo_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bamboo_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e909beb7c632318a",
+      "count": 1
+    }
+  }
+}

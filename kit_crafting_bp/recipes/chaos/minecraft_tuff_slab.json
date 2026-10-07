@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_tuff_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tuff"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tuff"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f8ff2133c87c9102",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_smoker_from_stripped_mangrove_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " # ",
+      "#F#",
+      " # "
+    ],
+    "key": {
+      "F": {
+        "item": "minecraft:furnace"
+      },
+      "#": {
+        "item": "minecraft:stripped_mangrove_log"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_fdfd9de5e6786e7f",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_campfire_from_charcoal_mangrove_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " A ",
+      "ABA",
+      "CCC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:charcoal"
+      },
+      "C": {
+        "item": "minecraft:mangrove_log"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_533f781f509d3a25",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_hoe_from_cobbled_deepslate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XX",
+      " #",
+      " #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_4d505846275fde9d",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_spruce_shelf_from_stripped_spruce_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "   ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_spruce_log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_spruce_log"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ae2ed678c4ff4acf",
+      "count": 1
+    }
+  }
+}

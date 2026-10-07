@@ -7,6 +7,42 @@ The add-on has a behavior pack in `kit_crafting_bp/` and a resource pack in
 
 ## Recipes
 
+### Chaos Crafting Table
+
+Combine **one crafting table and one amethyst shard**, in any arrangement, to
+make a Chaos Crafting Table. Place it and use the usual 3×3 crafting grid.
+
+Every craft spends the normal ingredients and rolls independently:
+
+- **50%:** the normal output, including its normal quantity.
+- **50%:** one random inventory item from the game's registered item types,
+  excluding the intended output type, air and the internal Chaos Results.
+
+All recipes use the same random pool. Sticks can turn into netherite armour;
+diamond swords can turn into sticks. There are no value tiers. Bucket and bottle
+returns still happen on either outcome.
+
+The output preview shows **Chaos Result (reveals in inventory)**. Move it into
+your inventory (or close the crafting screen) and it automatically becomes the
+reward within a quarter of a second. Each Chaos Result represents one craft and
+does not stack. A full inventory works if the result can occupy a slot; a result
+held on the cursor waits until you put it in a slot. The roll is saved before
+delivery, so a failed delivery cannot be used to reroll it. Ordinary crafting
+tables retain their ordinary recipes.
+
+The current generated set contains 1,186 bundled Education 26.32 shaped/shapeless
+crafting recipe definitions plus Kit Crafting's four recipes. This is a pinned
+recipe set, not automatic discovery of other add-ons or engine-only special
+recipes such as tool repair and arbitrary fireworks. Some bundled definitions
+may depend on game features unavailable in a particular world.
+
+The table requires the stable `@minecraft/server` 2.0.0 scripting module.
+No experimental Script API is used. Verified in Education 26.32: the table
+registers and opens, consumes ingredients, and reveals normal and random rewards
+in inventory. The stick recipe produced four sticks, a golden hoe and a spider
+eye in separate crafts. Automated checks cover generated data and reward
+transactions; the full recipe set has not been individually tested in-game.
+
 ### Blast furnace
 
 The first recipe produces one blast furnace at a crafting table:
@@ -56,6 +92,8 @@ only Minecraft Education and a browser.
 ```sh
 make                 # validate and build the current version
 make install-dev     # update Minecraft's single development copy
+make chaos           # regenerate chaos copies after adding/editing recipes
+make test            # check reward logic and inventory transactions (Node 20+)
 make version         # print the current manifest version
 make bump-patch      # 1.0.1 -> 1.0.2
 make bump-minor      # 1.0.1 -> 1.1.0

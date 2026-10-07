@@ -1,0 +1,7 @@
+{
+  "name": "kit-crafting",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test tests/chaos.test.mjs"},
+  "engines": {"node": ">=20"}
+}

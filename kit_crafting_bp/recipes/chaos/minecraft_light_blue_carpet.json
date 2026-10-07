@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_light_blue_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:light_blue_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:light_blue_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4801e5c5490bdb7f",
+      "count": 1
+    }
+  }
+}

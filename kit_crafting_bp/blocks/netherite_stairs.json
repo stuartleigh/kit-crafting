@@ -4,8 +4,7 @@
     "description": {
       "identifier": "kit_crafting:netherite_stairs",
       "menu_category": {
-        "category": "construction",
-        "group": "itemGroup.name.stairs"
+        "category": "construction"
       }
     },
     "components": {

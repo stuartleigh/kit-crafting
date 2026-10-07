@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_mace"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:breeze_rod"
+      },
+      "*": {
+        "item": "minecraft:heavy_core"
+      }
+    },
+    "pattern": [
+      "*",
+      "#"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:breeze_rod"
+      },
+      {
+        "item": "minecraft:heavy_core"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_09416267352c586c",
+      "count": 1
+    }
+  }
+}

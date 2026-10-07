@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_beehive"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "ooo",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "tag": "minecraft:planks"
+      },
+      "o": {
+        "item": "minecraft:honeycomb"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "result": [
+      {
+        "item": "kit_crafting:chaos_result_3ad6cf09e117a27e",
+        "count": 1
+      }
+    ],
+    "priority": -1
+  }
+}

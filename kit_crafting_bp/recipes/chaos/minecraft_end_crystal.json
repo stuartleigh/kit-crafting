@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_end_crystal"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "GGG",
+      "GEG",
+      "GTG"
+    ],
+    "key": {
+      "T": {
+        "item": "minecraft:ghast_tear"
+      },
+      "E": {
+        "item": "minecraft:ender_eye"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:ender_eye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d24a124a5944d539",
+      "count": 1
+    }
+  }
+}

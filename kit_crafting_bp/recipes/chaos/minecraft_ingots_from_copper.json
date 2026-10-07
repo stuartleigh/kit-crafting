@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_ingots_from_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:copper_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:copper_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_bcbe2f102efc85cb",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

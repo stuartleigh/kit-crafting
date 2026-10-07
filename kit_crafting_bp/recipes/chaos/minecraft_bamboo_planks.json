@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bamboo_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bamboo_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_247cd22514f0367d",
+      "count": 1
+    }
+  }
+}

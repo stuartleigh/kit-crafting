@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_warped_button"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_button",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:warped_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:warped_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_516d4d8aee764338",
+      "count": 1
+    }
+  }
+}

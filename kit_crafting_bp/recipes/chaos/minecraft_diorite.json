@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_diorite"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "CQ",
+      "QC"
+    ],
+    "key": {
+      "Q": {
+        "item": "minecraft:quartz"
+      },
+      "C": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_acc200c038dccd41",
+      "count": 1
+    }
+  }
+}

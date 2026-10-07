@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_scaffolding"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "|S|",
+      "| |",
+      "| |"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:bamboo"
+      },
+      "S": {
+        "item": "minecraft:string"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_644ab802c9b1cbe4",
+      "count": 1
+    }
+  }
+}

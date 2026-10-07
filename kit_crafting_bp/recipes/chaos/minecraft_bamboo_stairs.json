@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bamboo_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_stairs",
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bamboo_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ff2cb187a99953a1",
+      "count": 1
+    }
+  }
+}

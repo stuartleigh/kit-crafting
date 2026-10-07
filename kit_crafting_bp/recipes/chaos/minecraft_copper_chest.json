@@ -1,0 +1,54 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_copper_chest"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XXX",
+      "X#X",
+      "XXX"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:chest"
+      },
+      "X": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:copper_chest"
+      },
+      {
+        "item": "minecraft:exposed_copper_chest"
+      },
+      {
+        "item": "minecraft:weathered_copper_chest"
+      },
+      {
+        "item": "minecraft:oxidized_copper_chest"
+      },
+      {
+        "item": "minecraft:waxed_copper_chest"
+      },
+      {
+        "item": "minecraft:waxed_exposed_copper_chest"
+      },
+      {
+        "item": "minecraft:waxed_weathered_copper_chest"
+      },
+      {
+        "item": "minecraft:waxed_oxidized_copper_chest"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_2f90c798f51a2bbd",
+      "count": 1
+    }
+  }
+}

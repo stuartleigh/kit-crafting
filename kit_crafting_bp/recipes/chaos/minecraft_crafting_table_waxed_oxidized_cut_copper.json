@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crafting_table_waxed_oxidized_cut_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:waxed_oxidized_copper"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:waxed_oxidized_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ad4e9bf73c163955",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

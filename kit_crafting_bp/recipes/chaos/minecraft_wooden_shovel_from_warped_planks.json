@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_wooden_shovel_from_warped_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A",
+      "B",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "warped_planks"
+      },
+      "B": {
+        "item": "stick"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_f09656b7c0f1dd6b",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

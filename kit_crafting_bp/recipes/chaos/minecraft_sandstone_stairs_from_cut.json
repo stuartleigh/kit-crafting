@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_sandstone_stairs_from_cut"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cut_sandstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cut_sandstone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_955e458ffe2c7fa5",
+      "count": 1
+    }
+  }
+}

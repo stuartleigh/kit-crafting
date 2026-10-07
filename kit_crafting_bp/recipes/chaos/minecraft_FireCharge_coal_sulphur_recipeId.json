@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_FireCharge_coal_sulphur_recipeId"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:blaze_powder"
+      },
+      {
+        "tag": "minecraft:coals"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:blaze_powder"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3675cb65290c26d7",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

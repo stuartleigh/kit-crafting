@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_resin_bricks_from_slabs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:resin_brick_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:resin_brick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_46c74aa057e12237",
+      "count": 1
+    }
+  }
+}

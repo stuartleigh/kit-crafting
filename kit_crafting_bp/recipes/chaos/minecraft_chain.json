@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chain"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "N",
+      "G",
+      "N"
+    ],
+    "key": {
+      "N": {
+        "item": "iron_nugget"
+      },
+      "G": {
+        "item": "iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_83d33fcba494d6a1",
+      "count": 1
+    }
+  }
+}

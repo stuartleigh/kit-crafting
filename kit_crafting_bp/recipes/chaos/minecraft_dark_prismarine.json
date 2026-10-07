@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dark_prismarine"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "SSS",
+      "SIS",
+      "SSS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:prismarine_shard"
+      },
+      "I": {
+        "item": "minecraft:black_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:prismarine_shard"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_967bd538a545ea0b",
+      "count": 1
+    }
+  }
+}

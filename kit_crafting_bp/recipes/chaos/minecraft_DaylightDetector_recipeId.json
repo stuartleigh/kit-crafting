@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_DaylightDetector_recipeId"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB",
+      "CCC"
+    ],
+    "key": {
+      "A": {
+        "item": "glass"
+      },
+      "B": {
+        "item": "quartz"
+      },
+      "C": {
+        "tag": "minecraft:wooden_slabs"
+      }
+    },
+    "unlock": [
+      {
+        "item": "quartz"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_acca997035357438",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lapis_lazuli"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:lapis_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:lapis_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_163ccc828d26d41d",
+      "count": 1
+    }
+  }
+}

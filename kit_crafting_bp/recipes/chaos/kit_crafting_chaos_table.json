@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_kit_crafting_chaos_table"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:crafting_table"
+      },
+      {
+        "item": "minecraft:amethyst_shard"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:amethyst_shard"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_47ce11e40b710088",
+      "count": 1
+    }
+  }
+}

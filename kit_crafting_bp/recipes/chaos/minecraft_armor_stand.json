@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_armor_stand"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "///",
+      " / ",
+      "/_/"
+    ],
+    "key": {
+      "/": {
+        "item": "minecraft:stick"
+      },
+      "_": {
+        "item": "minecraft:smooth_stone_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:smooth_stone_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4d8096d5d991958f",
+      "count": 1
+    }
+  }
+}

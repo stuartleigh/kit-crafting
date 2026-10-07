@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_sword_from_blackstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "X",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:blackstone"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_ee3bd75e8bbbd43b",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

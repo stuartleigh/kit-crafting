@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_spruce_wooden_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:spruce_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:spruce_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_417a0ae04b1a0f44",
+      "count": 1
+    }
+  }
+}

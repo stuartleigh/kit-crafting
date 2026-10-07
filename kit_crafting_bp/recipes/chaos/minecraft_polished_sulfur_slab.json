@@ -1,0 +1,28 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_sulfur_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_sulfur"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_sulfur"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_6e2e112a19144abb",
+      "count": 1
+    }
+  }
+}

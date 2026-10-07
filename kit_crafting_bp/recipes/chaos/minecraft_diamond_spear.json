@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_diamond_spear"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "  X",
+      " # ",
+      "#  "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:diamond"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9654c454f78f4c6f",
+      "count": 1
+    }
+  }
+}

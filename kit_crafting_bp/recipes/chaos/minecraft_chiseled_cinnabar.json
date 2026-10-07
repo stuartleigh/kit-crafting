@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_cinnabar"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cinnabar_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cinnabar_slab"
+      }
+    ],
+    "priority": 1,
+    "result": {
+      "item": "kit_crafting:chaos_result_ff006421516d8c82",
+      "count": 1
+    }
+  }
+}

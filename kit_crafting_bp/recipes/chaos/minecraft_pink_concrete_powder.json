@@ -1,0 +1,58 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pink_concrete_powder"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "concrete_powder",
+    "ingredients": [
+      {
+        "item": "minecraft:pink_dye"
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:gravel"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:sand",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d21606e09d636a58",
+      "count": 1
+    }
+  }
+}

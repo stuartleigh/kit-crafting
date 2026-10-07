@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_tuff_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A",
+      "AA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:polished_tuff"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_tuff"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3c7b1115368b288f",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

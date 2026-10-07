@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lime_dye_from_bonemeal"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "minecraft:dye",
+        "data": 2
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 15
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:dye",
+        "data": 2
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 15
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f4d6d9110ca2eb14",
+      "count": 1
+    }
+  }
+}

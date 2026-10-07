@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_oxidized_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:oxidized_copper"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:oxidized_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c5be8bc4687809c1",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

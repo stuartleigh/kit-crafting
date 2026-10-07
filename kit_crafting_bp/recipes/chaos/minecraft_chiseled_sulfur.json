@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_sulfur"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:sulfur_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:sulfur_slab"
+      }
+    ],
+    "priority": 1,
+    "result": {
+      "item": "kit_crafting:chaos_result_7134972bffd8773a",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_purpur_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "FF",
+      "FF"
+    ],
+    "key": {
+      "F": {
+        "item": "minecraft:chorus_fruit_popped"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:chorus_fruit_popped"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0d8492cabc6dd6d6",
+      "count": 1
+    }
+  }
+}

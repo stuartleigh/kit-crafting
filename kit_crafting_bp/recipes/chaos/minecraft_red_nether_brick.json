@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_red_nether_brick"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "NW",
+      "WN"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:nether_wart"
+      },
+      "N": {
+        "item": "minecraft:netherbrick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:nether_wart"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d834970d291b075b",
+      "count": 1
+    }
+  }
+}

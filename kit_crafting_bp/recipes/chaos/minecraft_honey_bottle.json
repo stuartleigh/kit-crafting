@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_honey_bottle"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:honey_block"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:honey_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_5c69c5c5a2ebd8f1",
+      "count": 1
+    }
+  }
+}

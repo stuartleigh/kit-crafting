@@ -1,0 +1,34 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_axe"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XX",
+      "X#",
+      " #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "tag": "minecraft:stone_tool_materials"
+      }
+    },
+    "unlock": [
+      {
+        "tag": "minecraft:stone_tool_materials"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e42b9380f115cd31",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lever"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cobblestone"
+      },
+      "X": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_5ea15f530a70ce04",
+      "count": 1
+    }
+  }
+}

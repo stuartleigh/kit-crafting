@@ -1,0 +1,38 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_rabbit_stew_from_red_mushroom"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "rabbit_stew",
+    "ingredients": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:baked_potato"
+      },
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      },
+      {
+        "item": "minecraft:cooked_rabbit"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:cooked_rabbit"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9ad76e4a559c5ecc",
+      "count": 1
+    }
+  }
+}

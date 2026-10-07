@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lantern"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#x#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:iron_nugget"
+      },
+      "x": {
+        "item": "minecraft:torch"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_nugget"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0ba612ea3a3752a1",
+      "count": 1
+    }
+  }
+}

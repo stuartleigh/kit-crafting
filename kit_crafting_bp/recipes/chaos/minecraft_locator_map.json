@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_locator_map"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:paper"
+      },
+      "X": {
+        "item": "minecraft:compass"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:compass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e42cfa6bace0c970",
+      "count": 1
+    }
+  }
+}

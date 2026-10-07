@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crafting_table_exposed_cut_copper_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A",
+      "AA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:exposed_cut_copper"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:exposed_cut_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_047d45d6e8a2a311",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_potent_sulfur"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:sulfur"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:sulfur"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d37cea2ab7b88cd1",
+      "count": 1
+    }
+  }
+}

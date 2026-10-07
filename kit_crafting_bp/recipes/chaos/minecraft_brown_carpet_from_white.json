@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_brown_carpet_from_white"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:white_carpet"
+      },
+      "X": {
+        "item": "minecraft:brown_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_carpet"
+      },
+      {
+        "item": "minecraft:brown_dye"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9eb074e14e83deed",
+      "count": 1
+    }
+  }
+}

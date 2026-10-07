@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_carrot_on_a_stick"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "# ",
+      " X"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:fishing_rod"
+      },
+      "X": {
+        "item": "minecraft:carrot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:carrot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_67585279fed7372b",
+      "count": 1
+    }
+  }
+}

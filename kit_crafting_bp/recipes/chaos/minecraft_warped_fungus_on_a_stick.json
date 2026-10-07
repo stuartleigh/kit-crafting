@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_warped_fungus_on_a_stick"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "# ",
+      " X"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:fishing_rod"
+      },
+      "X": {
+        "item": "minecraft:warped_fungus"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:warped_fungus"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f5d2b1f17f89061d",
+      "count": 1
+    }
+  }
+}

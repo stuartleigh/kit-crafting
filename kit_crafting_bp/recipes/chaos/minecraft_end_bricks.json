@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_end_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:end_stone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:end_stone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9e54e80e172c1d53",
+      "count": 1
+    }
+  }
+}

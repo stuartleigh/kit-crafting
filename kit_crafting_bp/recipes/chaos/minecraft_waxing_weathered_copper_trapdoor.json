@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_weathered_copper_trapdoor"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:weathered_copper_trapdoor"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:weathered_copper_trapdoor"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_1061bb48f5dc293c",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

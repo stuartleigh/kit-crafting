@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_cinnabar_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:polished_cinnabar"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_cinnabar"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_75e062d858084760",
+      "count": 1
+    }
+  }
+}

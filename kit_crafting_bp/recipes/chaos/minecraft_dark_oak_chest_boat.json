@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dark_oak_chest_boat"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:chest"
+      },
+      {
+        "item": "minecraft:boat",
+        "data": 5
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:boat",
+        "data": 5
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_75774574f6acb4ce",
+      "count": 1
+    }
+  }
+}

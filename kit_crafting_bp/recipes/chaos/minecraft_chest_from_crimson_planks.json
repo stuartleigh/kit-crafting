@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chest_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "A A",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "crimson_planks"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_e59c4b746b65a892",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_jukebox_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "crimson_planks"
+      },
+      "B": {
+        "item": "diamond"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_c7367c27de5b7337",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

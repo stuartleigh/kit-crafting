@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_melon_seeds"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "M"
+    ],
+    "key": {
+      "M": {
+        "item": "minecraft:melon"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_23e59866e4a2fa11",
+      "count": 1
+    }
+  }
+}

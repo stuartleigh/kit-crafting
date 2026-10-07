@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_smoker_from_stripped_crimson_stem"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "stripped_crimson_stem"
+      },
+      "B": {
+        "item": "furnace"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_fdfd9de5e6786e7f",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_respawn_anchor"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "OOO",
+      "GGG",
+      "OOO"
+    ],
+    "key": {
+      "O": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "G": {
+        "item": "minecraft:glowstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:crying_obsidian"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_64c7cc5a6df48bf1",
+      "count": 1
+    }
+  }
+}

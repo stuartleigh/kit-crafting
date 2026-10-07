@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_composter_from_warped_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A A",
+      "A A",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "warped_slab"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_0abc80d7d9c7c468",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

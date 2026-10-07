@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_birch_planks_from_stripped_wood"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_birch_wood"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_birch_wood"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_930551fffdee4dce",
+      "count": 1
+    }
+  }
+}

@@ -17,7 +17,7 @@ RP_PACKAGE_ABS = $(abspath $(RP_PACKAGE))
 
 .DEFAULT_GOAL := package
 
-.PHONY: package site publish install-dev validate version bump-patch bump-minor bump-major release-patch release-minor release-major
+.PHONY: package site publish install-dev validate chaos test version bump-patch bump-minor bump-major release-patch release-minor release-major
 
 package: validate
 	@mkdir -p "$(DIST_DIR)"
@@ -44,14 +44,21 @@ install-dev: validate
 	@echo "Installed development packs at $(DEV_BP_DIR) and $(DEV_RP_DIR)"
 
 validate:
+	@python3 scripts/generate_chaos.py --check
 	@find "$(BP_DIR)" "$(RP_DIR)" -type f -name '*.json' -print0 | xargs -0 -n1 jq empty
+
+chaos:
+	@python3 scripts/generate_chaos.py
+
+test:
+	@node --test tests/chaos.test.mjs
 
 version:
 	@echo "$(VERSION)"
 
 bump-patch:
 	@tmp="$(BP_MANIFEST).tmp"; \
-	jq '.header.version[2] += 1 | .modules[].version = .header.version | .dependencies[].version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
+	jq '.header.version[2] += 1 | .modules[].version = .header.version | (.dependencies[] | select(.uuid)).version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
 	mv "$$tmp" "$(BP_MANIFEST)"
 	@tmp="$(RP_MANIFEST).tmp"; \
 	jq '.header.version[2] += 1 | .modules[].version = .header.version' "$(RP_MANIFEST)" > "$$tmp" && \
@@ -60,7 +67,7 @@ bump-patch:
 
 bump-minor:
 	@tmp="$(BP_MANIFEST).tmp"; \
-	jq '.header.version = [.header.version[0], (.header.version[1] + 1), 0] | .modules[].version = .header.version | .dependencies[].version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
+	jq '.header.version = [.header.version[0], (.header.version[1] + 1), 0] | .modules[].version = .header.version | (.dependencies[] | select(.uuid)).version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
 	mv "$$tmp" "$(BP_MANIFEST)"
 	@tmp="$(RP_MANIFEST).tmp"; \
 	jq '.header.version = [.header.version[0], (.header.version[1] + 1), 0] | .modules[].version = .header.version' "$(RP_MANIFEST)" > "$$tmp" && \
@@ -69,7 +76,7 @@ bump-minor:
 
 bump-major:
 	@tmp="$(BP_MANIFEST).tmp"; \
-	jq '.header.version = [(.header.version[0] + 1), 0, 0] | .modules[].version = .header.version | .dependencies[].version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
+	jq '.header.version = [(.header.version[0] + 1), 0, 0] | .modules[].version = .header.version | (.dependencies[] | select(.uuid)).version = .header.version' "$(BP_MANIFEST)" > "$$tmp" && \
 	mv "$$tmp" "$(BP_MANIFEST)"
 	@tmp="$(RP_MANIFEST).tmp"; \
 	jq '.header.version = [(.header.version[0] + 1), 0, 0] | .modules[].version = .header.version' "$(RP_MANIFEST)" > "$$tmp" && \

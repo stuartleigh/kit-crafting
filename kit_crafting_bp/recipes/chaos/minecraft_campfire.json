@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_campfire"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " | ",
+      "|C|",
+      "###"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "tag": "minecraft:logs"
+      },
+      "C": {
+        "tag": "minecraft:coals"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_533f781f509d3a25",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_glow_frame"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:frame"
+      },
+      {
+        "item": "minecraft:glow_ink_sac"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:frame"
+      },
+      {
+        "item": "minecraft:glow_ink_sac"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_2c6cc5479111ab68",
+      "count": 1
+    }
+  }
+}

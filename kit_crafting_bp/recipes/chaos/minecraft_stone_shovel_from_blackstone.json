@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_shovel_from_blackstone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:blackstone"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_dbc7e2333ce966ae",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

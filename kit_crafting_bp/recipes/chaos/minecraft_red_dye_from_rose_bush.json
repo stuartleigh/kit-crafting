@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_red_dye_from_rose_bush"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "red_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:rose_bush"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:rose_bush"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_14ad16c8fa482dcc",
+      "count": 1
+    }
+  }
+}

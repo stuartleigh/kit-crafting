@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_beacon"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "GGG",
+      "GSG",
+      "OOO"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:netherstar"
+      },
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherstar"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_32d79b3afdb070a8",
+      "count": 1
+    }
+  }
+}

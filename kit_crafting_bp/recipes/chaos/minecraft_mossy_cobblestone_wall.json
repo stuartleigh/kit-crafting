@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_mossy_cobblestone_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:mossy_cobblestone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:mossy_cobblestone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_653ed5a30ede91f3",
+      "count": 1
+    }
+  }
+}

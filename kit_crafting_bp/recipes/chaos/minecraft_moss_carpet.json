@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_moss_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:moss_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:moss_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8c67af508e9850dd",
+      "count": 1
+    }
+  }
+}

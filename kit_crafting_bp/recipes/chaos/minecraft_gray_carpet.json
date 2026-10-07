@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_gray_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gray_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gray_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ff88c218a89d0002",
+      "count": 1
+    }
+  }
+}

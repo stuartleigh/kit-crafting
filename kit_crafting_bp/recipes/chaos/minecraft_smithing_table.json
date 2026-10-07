@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_smithing_table"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "||",
+      "##",
+      "##"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:iron_ingot"
+      },
+      "#": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": [
+      {
+        "item": "kit_crafting:chaos_result_2968be6ff4b0d6b2",
+        "count": 1
+      }
+    ],
+    "priority": -1
+  }
+}

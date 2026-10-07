@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pink_dye_from_pink_petals"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "pink_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:pink_petals"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:pink_petals"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_1a46717e62bb7e58",
+      "count": 1
+    }
+  }
+}

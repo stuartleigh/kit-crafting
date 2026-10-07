@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_nether_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:nether_brick_slab"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:nether_brick_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_09490b6e4cc8c4a6",
+      "count": 1
+    }
+  }
+}

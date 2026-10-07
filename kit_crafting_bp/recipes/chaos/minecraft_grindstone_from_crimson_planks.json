@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_grindstone_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "|_|",
+      "# #"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "item": "minecraft:crimson_planks"
+      },
+      "_": {
+        "item": "minecraft:normal_stone_slab"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_11916fea219a49a0",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

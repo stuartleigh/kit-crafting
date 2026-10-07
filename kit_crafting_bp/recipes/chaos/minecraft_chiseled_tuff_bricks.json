@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_chiseled_tuff_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:tuff_brick_slab"
+      }
+    },
+    "pattern": [
+      "#",
+      "#"
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:tuff_brick_slab"
+      }
+    ],
+    "priority": 1,
+    "result": {
+      "item": "kit_crafting:chaos_result_9d79d416306bea86",
+      "count": 1
+    }
+  }
+}

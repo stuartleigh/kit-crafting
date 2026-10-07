@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_end_rod"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "/",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:chorus_fruit_popped"
+      },
+      "/": {
+        "item": "minecraft:blaze_rod"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:chorus_fruit_popped"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_a3420b1b0923d163",
+      "count": 1
+    }
+  }
+}

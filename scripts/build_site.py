@@ -11,7 +11,8 @@ version = bp["header"]["version"]
 assert rp["header"]["version"] == version, "Pack versions differ"
 for pack in (bp, rp):
     assert all(m["version"] == version for m in pack["modules"]), "Module versions differ"
-assert bp["dependencies"] == [{"uuid": rp["header"]["uuid"], "version": version}], "Resource dependency differs"
+assert [d for d in bp["dependencies"] if "uuid" in d] == [{"uuid": rp["header"]["uuid"], "version": version}], "Resource dependency differs"
+assert [d for d in bp["dependencies"] if "module_name" in d] == [{"module_name": "@minecraft/server", "version": "2.0.0"}], "Script dependency differs"
 version_text = ".".join(map(str, version))
 source = root / "dist" / f"Kit-Crafting-{version_text}.mcaddon"
 site = root / "_site"

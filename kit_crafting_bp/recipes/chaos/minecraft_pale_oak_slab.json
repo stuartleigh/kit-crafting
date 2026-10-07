@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pale_oak_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:pale_oak_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:pale_oak_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_229b3de0db8a6016",
+      "count": 1
+    }
+  }
+}

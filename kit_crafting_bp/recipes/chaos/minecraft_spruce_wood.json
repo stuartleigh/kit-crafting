@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_spruce_wood"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wood",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:spruce_log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:spruce_log"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_417f34e9bee5b2dc",
+      "count": 1
+    }
+  }
+}

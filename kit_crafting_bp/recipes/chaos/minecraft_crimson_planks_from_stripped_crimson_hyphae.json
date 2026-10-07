@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crimson_planks_from_stripped_crimson_hyphae"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_crimson_hyphae"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_crimson_hyphae"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_03a6e025513a84dc",
+      "count": 1
+    }
+  }
+}

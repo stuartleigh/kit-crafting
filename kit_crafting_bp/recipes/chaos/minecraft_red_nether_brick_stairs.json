@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_red_nether_brick_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:red_nether_brick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:red_nether_brick"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_66ee03370f763da2",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_torch"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "X",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "tag": "minecraft:coals"
+      }
+    },
+    "unlock": [
+      {
+        "tag": "minecraft:coals"
+      },
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "tag": "minecraft:is_pickaxe"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f150d9203c936705",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

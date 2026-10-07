@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_raw_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:raw_copper_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:raw_copper_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c1cbb8c61e4b4eac",
+      "count": 1
+    }
+  }
+}

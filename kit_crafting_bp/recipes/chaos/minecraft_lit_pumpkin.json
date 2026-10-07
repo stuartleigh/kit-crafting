@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lit_pumpkin"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:carved_pumpkin"
+      },
+      "B": {
+        "item": "minecraft:torch"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:carved_pumpkin"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_27ccbef4fa1a98fc",
+      "count": 1
+    }
+  }
+}

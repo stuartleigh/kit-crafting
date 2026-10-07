@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_fletching_table"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "||",
+      "##",
+      "##"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:flint"
+      },
+      "#": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:flint"
+      }
+    ],
+    "result": [
+      {
+        "item": "kit_crafting:chaos_result_8cb8313a6f7e1366",
+        "count": 1
+      }
+    ],
+    "priority": -1
+  }
+}

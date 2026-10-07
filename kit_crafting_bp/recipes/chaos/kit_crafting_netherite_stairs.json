@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_kit_crafting_netherite_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "N  ",
+      "NN ",
+      "NNN"
+    ],
+    "key": {
+      "N": {
+        "item": "minecraft:netherite_block"
+      }
+    },
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_e7632af88cbbd468",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

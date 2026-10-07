@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_bamboo_trapdoor"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_trap_door",
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bamboo_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bamboo_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_98bcd74a12c43dfb",
+      "count": 1
+    }
+  }
+}

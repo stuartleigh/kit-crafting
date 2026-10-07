@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_coal_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:coal",
+        "data": 0
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:coal",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_46a48a7e69a9adaa",
+      "count": 1
+    }
+  }
+}

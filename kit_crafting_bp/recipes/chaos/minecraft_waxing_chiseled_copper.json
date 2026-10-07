@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_chiseled_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:chiseled_copper"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:chiseled_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b6543c0c78b754c2",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

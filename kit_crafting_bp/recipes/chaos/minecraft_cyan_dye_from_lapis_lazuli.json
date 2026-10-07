@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_cyan_dye_from_lapis_lazuli"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "minecraft:dye",
+        "data": 4
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:dye",
+        "data": 4
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 2
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e7679476dc1fee2c",
+      "count": 1
+    }
+  }
+}

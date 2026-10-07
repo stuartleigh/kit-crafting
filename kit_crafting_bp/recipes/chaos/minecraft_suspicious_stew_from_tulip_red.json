@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_suspicious_stew_from_tulip_red"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:red_tulip"
+      }
+    ],
+    "unlock": {
+      "context": "None"
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_fe4d8cca558a9c2c",
+      "count": 1
+    }
+  }
+}

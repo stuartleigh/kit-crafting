@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_exposed_copper_door"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:exposed_copper_door"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:exposed_copper_door"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0665aafde335bd0c",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_soul_torch"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      ".",
+      "|",
+      "#"
+    ],
+    "key": {
+      ".": {
+        "tag": "minecraft:coals"
+      },
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "tag": "minecraft:soul_fire_base_blocks"
+      }
+    },
+    "unlock": [
+      {
+        "tag": "minecraft:soul_fire_base_blocks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b2cdcec3d80a61cc",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

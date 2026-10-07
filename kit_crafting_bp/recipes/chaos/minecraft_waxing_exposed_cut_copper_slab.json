@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_exposed_cut_copper_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:exposed_cut_copper_slab"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:exposed_cut_copper_slab"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c6d912c715a0c87a",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

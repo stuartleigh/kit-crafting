@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crafter"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#C#",
+      "RDR"
+    ],
+    "key": {
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "#": {
+        "item": "minecraft:iron_ingot"
+      },
+      "D": {
+        "item": "minecraft:dropper"
+      },
+      "C": {
+        "item": "minecraft:crafting_table"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dropper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_1cab27cf9744c92e",
+      "count": 1
+    }
+  }
+}

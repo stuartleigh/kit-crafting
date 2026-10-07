@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_crafting_table_waxed_exposed_cut_copper"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:waxed_exposed_copper"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:waxed_exposed_copper"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_6b3d6cedcb34b0bb",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

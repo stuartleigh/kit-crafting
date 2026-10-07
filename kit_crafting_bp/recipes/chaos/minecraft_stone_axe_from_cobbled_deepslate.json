@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stone_axe_from_cobbled_deepslate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "XX",
+      "X#",
+      " #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_e42b9380f115cd31",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

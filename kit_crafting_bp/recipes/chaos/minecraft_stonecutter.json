@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stonecutter"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " X ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stone"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c175f89938531194",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_snow"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:snowball"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:snowball"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_c201fd50ed0f8063",
+      "count": 1
+    }
+  }
+}

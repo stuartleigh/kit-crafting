@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_beehive_from_mangrove_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "BBB",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "mangrove_planks"
+      },
+      "B": {
+        "item": "honeycomb"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_3ad6cf09e117a27e",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

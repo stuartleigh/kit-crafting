@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_deepslate_slab"
+    },
+    "key": {
+      "#": {
+        "item": "minecraft:polished_deepslate"
+      }
+    },
+    "pattern": [
+      "###"
+    ],
+    "priority": 1,
+    "result": {
+      "item": "kit_crafting:chaos_result_d806ca4f66fbc90a",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_deepslate"
+      }
+    ],
+    "tags": [
+      "kit_crafting_chaos"
+    ]
+  }
+}

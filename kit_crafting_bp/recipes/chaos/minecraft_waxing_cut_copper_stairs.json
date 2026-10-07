@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_cut_copper_stairs"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:cut_copper_stairs"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:cut_copper_stairs"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_69f52050b51d41bb",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

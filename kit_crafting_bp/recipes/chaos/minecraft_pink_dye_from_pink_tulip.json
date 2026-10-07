@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_pink_dye_from_pink_tulip"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "pink_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:pink_tulip"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:pink_tulip"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f25760a979044614",
+      "count": 1
+    }
+  }
+}

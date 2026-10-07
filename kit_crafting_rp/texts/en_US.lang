@@ -1,1 +1,3 @@
 tile.kit_crafting:netherite_stairs.name=Netherite Stairs
+tile.kit_crafting:chaos_table.name=Chaos Crafting Table
+item.kit_crafting:chaos_result.name=Chaos Result (reveals in inventory)

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_tuff_brick_slab"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:tuff_bricks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tuff_bricks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8d8fcce206d0af1b",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

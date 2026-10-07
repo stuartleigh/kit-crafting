@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_brown_dye_from_cocoa_beans"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "brown_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:dye",
+        "data": 3
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:dye",
+        "data": 3
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_7ccf248db800bbf0",
+      "count": 1
+    }
+  }
+}

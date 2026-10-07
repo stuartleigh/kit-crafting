@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_quartz_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:quartz"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_544560e4d34b7ecc",
+      "count": 1
+    }
+  }
+}

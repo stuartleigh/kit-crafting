@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_tuff_brick_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:tuff_bricks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tuff_bricks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_30c3df1a434adc9f",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_copper_torch"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "^",
+      ".",
+      "|"
+    ],
+    "key": {
+      ".": {
+        "tag": "minecraft:coals"
+      },
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "^": {
+        "item": "minecraft:copper_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:copper_nugget"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_73f51b850478ee1f",
+      "count": 1
+    }
+  }
+}

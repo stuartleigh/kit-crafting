@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_magenta_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:magenta_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:magenta_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ddfd49a9d1b52365",
+      "count": 1
+    }
+  }
+}

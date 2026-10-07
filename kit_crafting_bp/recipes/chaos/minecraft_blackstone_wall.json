@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_blackstone_wall"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:blackstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:blackstone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_10c7dc3ef7bb7fc8",
+      "count": 1
+    }
+  }
+}

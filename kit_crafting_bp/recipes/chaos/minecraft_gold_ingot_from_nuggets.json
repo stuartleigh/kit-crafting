@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_gold_ingot_from_nuggets"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "gold_ingot",
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_nugget"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_01bb5117aea1dedb",
+      "count": 1
+    }
+  }
+}

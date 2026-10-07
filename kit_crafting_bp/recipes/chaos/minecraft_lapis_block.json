@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lapis_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:dye",
+        "data": 4
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dye",
+        "data": 4
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_49e134c9ba174718",
+      "count": 1
+    }
+  }
+}

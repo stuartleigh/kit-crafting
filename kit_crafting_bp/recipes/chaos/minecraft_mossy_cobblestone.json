@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_mossy_cobblestone"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:cobblestone"
+      },
+      {
+        "item": "minecraft:vine"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:vine"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8a1bf79c5273457a",
+      "count": 1
+    }
+  }
+}

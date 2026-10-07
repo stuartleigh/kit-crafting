@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_white_dye_from_lily_of_the_valley"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "white_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:lily_of_the_valley"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:lily_of_the_valley"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0e7761e449c6eb6b",
+      "count": 1
+    }
+  }
+}

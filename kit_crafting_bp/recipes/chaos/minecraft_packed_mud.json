@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_packed_mud"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:wheat"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:mud"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d1b2f10556faac45",
+      "count": 1
+    }
+  }
+}

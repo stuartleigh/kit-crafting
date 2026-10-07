@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_acacia_wood_stripped"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wood",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_acacia_log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_acacia_log"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_14d22441ef5a39fa",
+      "count": 1
+    }
+  }
+}

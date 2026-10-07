@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_dune_armor_trim_smithing_template_duplicate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#S#",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:dune_armor_trim_smithing_template"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "minecraft:sandstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:dune_armor_trim_smithing_template"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_f992a30e07b88a1b",
+      "count": 1
+    }
+  }
+}

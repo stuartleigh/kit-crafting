@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_sticky_piston"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "S",
+      "P"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:piston"
+      },
+      "S": {
+        "item": "minecraft:slime_ball"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:slime_ball"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_84b3b6e91e913200",
+      "count": 1
+    }
+  }
+}

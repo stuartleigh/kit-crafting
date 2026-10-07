@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_blast_furnace"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "III",
+      "IFI",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:smooth_stone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "F": {
+        "item": "minecraft:furnace"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:smooth_stone"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fc7959a30fd0b3e2",
+      "count": 1
+    }
+  }
+}

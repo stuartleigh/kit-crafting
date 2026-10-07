@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_shulker_box"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "-",
+      "#",
+      "-"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:chest"
+      },
+      "-": {
+        "item": "minecraft:shulker_shell"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:shulker_shell"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_d92ddec4965a6912",
+      "count": 1
+    }
+  }
+}

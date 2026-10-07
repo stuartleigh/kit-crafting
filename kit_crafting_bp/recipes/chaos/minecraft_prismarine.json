@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_prismarine"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "SS",
+      "SS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:prismarine_shard"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:prismarine_shard"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_fe96f450593b59f0",
+      "count": 1
+    }
+  }
+}

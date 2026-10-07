@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_gold_ingot_from_block"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "gold_ingot",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ff272db86e12c635",
+      "count": 1
+    }
+  }
+}

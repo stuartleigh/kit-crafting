@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_soul_torch_from_soul_soil"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      ".",
+      "|",
+      "#"
+    ],
+    "key": {
+      ".": {
+        "item": "minecraft:coal"
+      },
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "item": "minecraft:soul_soil"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_b2cdcec3d80a61cc",
+      "count": 1
+    }
+  }
+}

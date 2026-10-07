@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_cyan_carpet"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "carpet",
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:cyan_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cyan_wool"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_02bb0c1370debe3c",
+      "count": 1
+    }
+  }
+}

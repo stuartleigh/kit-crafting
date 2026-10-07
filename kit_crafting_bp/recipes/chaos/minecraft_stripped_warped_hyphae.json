@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_stripped_warped_hyphae"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wood",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_warped_stem"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_warped_stem"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_e63b239543f882ff",
+      "count": 1
+    }
+  }
+}

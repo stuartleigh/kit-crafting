@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_black_stained_hardened_clay_from_ink_sac"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_hardened_clay",
+    "priority": 1,
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:hardened_clay"
+      },
+      "X": {
+        "item": "minecraft:ink_sac"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:hardened_clay"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_9f84942d7c9e70e0",
+      "count": 1
+    }
+  }
+}

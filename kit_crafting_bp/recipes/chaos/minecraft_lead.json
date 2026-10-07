@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_lead"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "~~ ",
+      "~~ ",
+      "  ~"
+    ],
+    "key": {
+      "~": {
+        "item": "minecraft:string"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_ceafef51c6595716",
+      "count": 1
+    }
+  }
+}

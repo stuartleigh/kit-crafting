@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_mangrove_pressure_plate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:mangrove_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:mangrove_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_3aee23b7855b7175",
+      "count": 1
+    }
+  }
+}

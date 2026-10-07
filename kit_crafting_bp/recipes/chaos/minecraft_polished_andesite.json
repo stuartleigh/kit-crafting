@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_polished_andesite"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "SS",
+      "SS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:andesite"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:andesite"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_112f0d7b6c2a6064",
+      "count": 1
+    }
+  }
+}

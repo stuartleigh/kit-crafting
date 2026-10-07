@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_copper_ingot_from_nuggets"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "copper_ingot",
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:copper_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:copper_nugget"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_8b65a8a2ccfd9749",
+      "count": 1
+    }
+  }
+}

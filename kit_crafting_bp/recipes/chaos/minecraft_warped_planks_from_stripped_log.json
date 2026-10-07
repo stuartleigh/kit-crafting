@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_warped_planks_from_stripped_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stripped_warped_stem"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stripped_warped_stem"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_2783731982e842a1",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_flow_armor_trim_smithing_template_duplicate"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#S#",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:flow_armor_trim_smithing_template"
+      },
+      "#": {
+        "item": "minecraft:diamond"
+      },
+      "C": {
+        "item": "minecraft:breeze_rod"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:flow_armor_trim_smithing_template"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_a777a6780d6bccfc",
+      "count": 1
+    }
+  }
+}

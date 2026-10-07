@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_banner_pattern_bricks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "banner_pattern",
+    "ingredients": [
+      {
+        "item": "minecraft:paper"
+      },
+      {
+        "item": "minecraft:brick_block"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:brick_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0c5bc6f055cceb02",
+      "count": 1
+    }
+  }
+}

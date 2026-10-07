@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_jungle_door"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "wooden_door",
+    "pattern": [
+      "##",
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:jungle_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:jungle_planks"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_cc75dca4d51a2fa0",
+      "count": 1
+    }
+  }
+}

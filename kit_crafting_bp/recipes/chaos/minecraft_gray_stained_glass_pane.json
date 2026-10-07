@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_gray_stained_glass_pane"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "stained_glass_pane",
+    "pattern": [
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gray_stained_glass"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gray_stained_glass"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_800581ab2878bf6a",
+      "count": 1
+    }
+  }
+}

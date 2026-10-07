@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_record_5"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:disc_fragment_5"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:disc_fragment_5"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_268c39972971d489",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

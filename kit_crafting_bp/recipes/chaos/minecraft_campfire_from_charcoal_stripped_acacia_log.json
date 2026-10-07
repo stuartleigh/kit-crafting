@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_campfire_from_charcoal_stripped_acacia_log"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " | ",
+      "|C|",
+      "###"
+    ],
+    "key": {
+      "|": {
+        "item": "minecraft:stick"
+      },
+      "#": {
+        "item": "minecraft:stripped_acacia_log"
+      },
+      "C": {
+        "item": "minecraft:charcoal"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_533f781f509d3a25",
+      "count": 1
+    }
+  }
+}

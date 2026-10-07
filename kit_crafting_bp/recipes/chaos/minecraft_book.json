@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_book"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:paper",
+        "data": 0
+      },
+      {
+        "item": "minecraft:paper",
+        "data": 0
+      },
+      {
+        "item": "minecraft:paper",
+        "data": 0
+      },
+      {
+        "item": "minecraft:leather",
+        "data": 0
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:paper",
+        "data": 0
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_024be99b40c7cce7",
+      "count": 1
+    }
+  }
+}

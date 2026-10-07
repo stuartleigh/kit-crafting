@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_fletching_table_from_crimson_planks"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "AA",
+      "BB",
+      "BB"
+    ],
+    "key": {
+      "A": {
+        "item": "flint"
+      },
+      "B": {
+        "item": "crimson_planks"
+      }
+    },
+    "result": {
+      "item": "kit_crafting:chaos_result_8cb8313a6f7e1366",
+      "count": 1
+    },
+    "priority": 2
+  }
+}

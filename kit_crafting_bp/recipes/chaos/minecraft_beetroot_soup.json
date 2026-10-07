@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_beetroot_soup"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:beetroot",
+        "count": 6
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_b77909b022a29828",
+      "count": 1
+    }
+  }
+}

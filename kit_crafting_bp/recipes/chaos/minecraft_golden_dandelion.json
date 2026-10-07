@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_golden_dandelion"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "###",
+      "#X#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_nugget"
+      },
+      "X": {
+        "item": "minecraft:dandelion"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_nugget"
+      },
+      {
+        "item": "minecraft:dandelion"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_0fcf09e4607ee3cf",
+      "count": 1
+    }
+  }
+}

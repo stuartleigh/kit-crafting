@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_blue_dye_from_cornflower"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "group": "blue_dye",
+    "ingredients": [
+      {
+        "item": "minecraft:cornflower"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:cornflower"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_794f14c96e9e6af8",
+      "count": 1
+    }
+  }
+}

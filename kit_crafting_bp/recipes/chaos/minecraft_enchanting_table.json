@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_enchanting_table"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      " B ",
+      "D#D",
+      "###"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:book"
+      },
+      "#": {
+        "item": "minecraft:obsidian"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:obsidian"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_5c9b33e441cb7900",
+      "count": 1
+    }
+  }
+}

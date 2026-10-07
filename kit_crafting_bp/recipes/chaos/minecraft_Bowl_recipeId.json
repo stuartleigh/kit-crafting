@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_Bowl_recipeId"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "A A",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      },
+      {
+        "item": "minecraft:mushroom_stew"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_345286bc96b92561",
+      "count": 1
+    },
+    "priority": -1
+  }
+}

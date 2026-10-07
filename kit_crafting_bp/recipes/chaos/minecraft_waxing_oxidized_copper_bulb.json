@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_waxing_oxidized_copper_bulb"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:oxidized_copper_bulb"
+      },
+      {
+        "item": "minecraft:honeycomb"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:oxidized_copper_bulb"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_4b737db12581d5bb",
+      "count": 1
+    },
+    "priority": 1
+  }
+}

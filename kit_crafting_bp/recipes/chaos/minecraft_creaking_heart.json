@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kit_crafting:chaos_minecraft_creaking_heart"
+    },
+    "tags": [
+      "kit_crafting_chaos"
+    ],
+    "pattern": [
+      "#",
+      "R",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:pale_oak_log"
+      },
+      "R": {
+        "item": "minecraft:resin_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:pale_oak_log"
+      },
+      {
+        "item": "minecraft:resin_block"
+      }
+    ],
+    "result": {
+      "item": "kit_crafting:chaos_result_56d70bec505e6f16",
+      "count": 1
+    }
+  }
+}
