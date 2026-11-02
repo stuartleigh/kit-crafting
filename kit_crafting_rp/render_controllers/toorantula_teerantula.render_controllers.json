@@ -1,0 +1,78 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.kit_crafting.toorantula_teerantula.body": {
+      "arrays": {
+        "materials": {
+          "Array.materials": [
+            "Material.default",
+            "Material.invisible"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Array.materials[query.is_invisible]"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "left_green_eyes": false
+        }
+      ]
+    },
+    "controller.render.kit_crafting.toorantula_teerantula.green_eyes": {
+      "arrays": {
+        "materials": {
+          "Array.materials": [
+            "Material.default",
+            "Material.invisible"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Array.materials[query.is_invisible]"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "left_green_eyes": true
+        }
+      ],
+      "overlay_color": {
+        "r": 0.12,
+        "g": 1,
+        "b": 0.2,
+        "a": 1
+      }
+    },
+    "controller.render.kit_crafting.toorantula_teerantula.web": {
+      "geometry": "Geometry.web",
+      "materials": [
+        {
+          "*": "Material.web"
+        }
+      ],
+      "textures": [
+        "Texture.web"
+      ],
+      "part_visibility": [
+        {
+          "*": "!query.is_invisible"
+        }
+      ]
+    }
+  }
+}

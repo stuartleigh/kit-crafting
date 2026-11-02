@@ -5,6 +5,95 @@ Minecraft Education behavior packs for version 26.32.
 The add-on has a behavior pack in `kit_crafting_bp/` and a resource pack in
 `kit_crafting_rp/`. Add future recipes to `kit_crafting_bp/recipes/`.
 
+## Mobs
+
+### Toorantula Teerantula
+
+The custom model combines **two spiders webbed together**, with two visible
+heads (one with green eyes and one with red eyes), sixteen animated legs,
+small fangs, and seven cobweb panels binding the
+bodies together. The spiders angle apart slightly and their gait is staggered.
+It keeps the prototype's **1.5× scale**, with a wider silhouette from the paired
+bodies rather than a fixed 3×1×2 target. The 2.1-block-wide by 1.35-block-high
+collision box, movement, combat, health and loot are unchanged by the model.
+It has **100 health points (50 hearts)**, ten times the first prototype's health.
+
+The model reuses the game's spider skin, glowing-eye material and actual cobweb
+texture (`textures/blocks/web`). The cobweb panels use a separate render pass
+with a two-sided cutout material so their gaps are transparent. They disappear
+when the mob is invisible. The left head's green eyes are separate faces with
+an isolated colour overlay, retaining the vanilla spider's emissive eye alpha;
+the right head keeps its red eyes. No vanilla definitions are overridden.
+
+The editable Bedrock geometry is in `kit_crafting_rp/models/entity/`, with the
+matching animation and web render-controller files in the resource pack.
+`python3 scripts/generate_toorantula_model.py` regenerates these files from the
+model's proportions and panel placements in that script; ordinary builds use
+the checked-in JSON and need no extra dependencies. Regenerating overwrites
+manual edits to those generated files. Spider proportions, UVs and gait are
+adapted from the vanilla Education 26.32 assets; no blanket open-source license
+is granted for those assets. This first paired model still needs in-game
+verification of the web rendering, leg motion and overall shape.
+
+Find **Spawn Toorantula Teerantula** in the Creative inventory, or enable cheats
+in a test world and run:
+
+```text
+/summon kit_crafting:toorantula_teerantula ~ ~ ~
+```
+
+The enlarged spider prototype was confirmed working in-game by the user. It is
+persistent so a test specimen can be revisited and does not spawn naturally.
+
+It now seeks visible targets within **16 blocks**, chases them with spider-style
+navigation, and performs melee attacks with **10 base damage** and a one-second
+cooldown. Damage against players can vary with difficulty, armour, and effects.
+It attacks Survival/Adventure players and friendly or neutral mobs, including
+chickens, sheep, villagers, goats, fish, pandas, wolves, golems, Endermen,
+ordinary piglins, zombified piglins, and zombie nautiluses. Creative/Spectator
+players are not ordinary combat targets.
+
+The targeting filter excludes hostile monsters, hoglins, the Ender Dragon,
+piglin brutes, other Toorantulas, and inanimate entities. Ordinary spiders and
+cave spiders are left alone. Education NPCs are excluded because they are
+non-combat characters. There is no unrestricted retaliation goal, so being hit
+by a hostile mob does not make it attack that mob. The mob's own `monster`
+family lets vanilla defenders recognise it as hostile. These classifications
+were checked against the vanilla entity definitions bundled with Education
+26.32; other add-ons depend on their own family tags.
+
+With mob loot enabled, each death drops exactly **one Toorantula Teerantula
+spawn egg and ten netherite ingots**. Looting does not increase either quantity.
+The spawn egg uses `set_actor_id` with the custom entity identifier, rather
+than a hardcoded numeric egg value. Combat and drops still need in-game
+verification after reloading the updated development pack.
+
+The intended boss design for later stages is:
+
+| Feature | Definition |
+| --- | --- |
+| Name | Toorantula Teerantula |
+| Appearance | Two spiders webbed together |
+| Size | Keep the enlarged prototype's imposing scale; exact block dimensions are flexible |
+| Purpose | Angry spider boss that attacks friendly and neutral mobs |
+| Temperament | Hostile |
+| Movement | “The same as a spider when it's digging” — exact digging behaviour to define before implementation |
+| Health | 100 health points (50 hearts), increased tenfold from the initial ghast-level health |
+| Attack strength | As strong as the Ender Dragon; the first melee implementation uses 10 base damage, without the dragon's special attack mechanics |
+| Drops | One of its own spawn eggs and ten netherite ingots per death |
+
+After `make install-dev`, leave and re-enter the test world and check the spawn
+egg name, summon command, enlarged model, leg animations, climbing, collision,
+and persistence after saving and reopening the world. Test combat on Normal
+difficulty in Survival/Adventure: check chickens, sheep, villagers and neutral
+mobs are attacked, while a zombie, creeper, hoglin, piglin brute, and a second
+Toorantula are ignored. Include a goat, fish, panda, Enderman and baby zombified
+piglin to cover the family-tag exceptions. With `doMobLoot` enabled, kill a
+Toorantula, collect both drops and use its dropped egg to spawn another one.
+Check the Creator Content Log for missing resources or invalid components.
+Use `make` to build the current
+development `.mcaddon`; use the release workflow below once it is verified.
+
 ## Recipes
 
 ### Chaos Crafting Table

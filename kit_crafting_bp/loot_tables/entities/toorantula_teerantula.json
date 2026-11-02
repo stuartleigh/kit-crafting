@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:spawn_egg",
+          "functions": [
+            {"function": "set_count", "count": 1},
+            {"function": "set_actor_id", "id": "kit_crafting:toorantula_teerantula"}
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:netherite_ingot",
+          "functions": [
+            {"function": "set_count", "count": 10}
+          ]
+        }
+      ]
+    }
+  ]
+}

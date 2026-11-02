@@ -1,0 +1,294 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.kit_crafting.toorantula_teerantula.web",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "web_front",
+          "pivot": [
+            0,
+            10,
+            -1
+          ],
+          "rotation": [
+            0,
+            0,
+            8
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -9,
+                6,
+                -1
+              ],
+              "size": [
+                18,
+                9,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_back",
+          "pivot": [
+            0,
+            10,
+            14
+          ],
+          "rotation": [
+            0,
+            0,
+            -6
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -12,
+                5,
+                14
+              ],
+              "size": [
+                24,
+                10,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_top_left",
+          "pivot": [
+            -6,
+            13.4,
+            9
+          ],
+          "rotation": [
+            0,
+            0,
+            -15
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -13,
+                13.4,
+                1
+              ],
+              "size": [
+                14,
+                0,
+                16
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_top_right",
+          "pivot": [
+            6,
+            13.8,
+            10
+          ],
+          "rotation": [
+            0,
+            0,
+            15
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                13.8,
+                2
+              ],
+              "size": [
+                14,
+                0,
+                16
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_centre",
+          "pivot": [
+            0,
+            10,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0,
+                5,
+                -1
+              ],
+              "size": [
+                0,
+                10,
+                18
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_wrap_left",
+          "pivot": [
+            -11,
+            9,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                5,
+                2
+              ],
+              "size": [
+                0,
+                9,
+                13
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "web_wrap_right",
+          "pivot": [
+            11,
+            9,
+            9
+          ],
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                11,
+                5,
+                3
+              ],
+              "size": [
+                0,
+                9,
+                13
+              ],
+              "uv": {
+                "east": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    16
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

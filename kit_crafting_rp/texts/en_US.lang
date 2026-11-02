@@ -1,3 +1,5 @@
 tile.kit_crafting:netherite_stairs.name=Netherite Stairs
 tile.kit_crafting:chaos_table.name=Chaos Crafting Table
 item.kit_crafting:chaos_result.name=Chaos Result (reveals in inventory)
+entity.kit_crafting:toorantula_teerantula.name=Toorantula Teerantula
+item.spawn_egg.entity.kit_crafting:toorantula_teerantula.name=Spawn Toorantula Teerantula

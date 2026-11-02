@@ -6,7 +6,7 @@
     "uuid": "4f3418fb-fd58-4327-9abc-a57a2cd452ba",
     "version": [
       1,
-      1,
+      2,
       0
     ],
     "min_engine_version": [
@@ -21,7 +21,7 @@
       "uuid": "a06f0509-d7d5-4ab0-97cf-581231054618",
       "version": [
         1,
-        1,
+        2,
         0
       ],
       "description": "Kit Crafting behavior data"
@@ -32,7 +32,7 @@
       "uuid": "ac26d8fa-687b-425d-b34f-360b3a8c7095",
       "version": [
         1,
-        1,
+        2,
         0
       ],
       "entry": "scripts/main.js",
@@ -44,7 +44,7 @@
       "uuid": "228910ec-84f6-4c04-ba7e-54448a9926a5",
       "version": [
         1,
-        1,
+        2,
         0
       ]
     },
