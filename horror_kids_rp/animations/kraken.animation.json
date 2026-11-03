@@ -4,6 +4,13 @@
     "animation.horror_kids.kraken.swim": {
       "loop": true,
       "bones": {
+        "swim_orientation": {
+          "rotation": [
+            "variable.kraken_pitch",
+            0,
+            0
+          ]
+        },
         "body": {
           "position": [
             0,

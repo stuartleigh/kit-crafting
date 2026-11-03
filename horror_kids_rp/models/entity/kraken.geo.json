@@ -16,7 +16,16 @@
       },
       "bones": [
         {
+          "name": "swim_orientation",
+          "pivot": [
+            0,
+            16,
+            0
+          ]
+        },
+        {
           "name": "body",
+          "parent": "swim_orientation",
           "pivot": [
             0,
             2,

@@ -1,6 +1,8 @@
 """Regressions for the Kraken's surface breathing, swimming and tentacle layout."""
 import json
+import math
 from pathlib import Path
+from types import SimpleNamespace
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -120,6 +122,50 @@ class KrakenTests(unittest.TestCase):
             for animation in animations.values():
                 self.assertNotIn(anchor["name"], animation["bones"])
                 self.assertNotIn("this", json.dumps(animation["bones"][first_segment["name"]]))
+
+    def test_kraken_drops_exactly_ten_raw_pork_chops(self):
+        loot = json.loads((ROOT / "horror_kids_bp/loot_tables/entities/kraken.json").read_text())
+        self.assertEqual(len(loot["pools"]), 1)
+        self.assertEqual(loot["pools"][0]["rolls"], 1)
+        self.assertEqual(loot["pools"][0]["entries"], [{
+            "type": "item", "name": "minecraft:porkchop",
+            "functions": [{"function": "set_count", "count": 10}],
+        }])
+
+    def test_shipped_motion_expressions_point_mantle_along_the_swim_slope(self):
+        client = json.loads((ROOT / "horror_kids_rp/entity/kraken.entity.json").read_text())["minecraft:client_entity"]["description"]
+        scripts = client["scripts"]
+
+        def sample(horizontal, vertical, water=True, pitch=0, delta_time=1):
+            variables = SimpleNamespace(kraken_pitch=pitch)
+            queries = SimpleNamespace(ground_speed=horizontal, vertical_speed=vertical,
+                                      is_in_water=water, delta_time=delta_time)
+            helpers = SimpleNamespace(atan2=lambda y, x: math.degrees(math.atan2(y, x)),
+                                      abs=abs, min=min,
+                                      lerprotate=lambda a, b, t: a + ((b - a + 180) % 360 - 180) * t)
+            env = {"v": variables, "q": queries, "m": helpers}
+            # Evaluate the shipped four assignment expressions and flat ternaries;
+            # this checks their signs, units and idle/land branches together.
+            for statement in scripts["pre_animation"]:
+                target, expression = statement.rstrip(";").split("=", 1)
+                expression = expression.replace("variable.", "v.").replace("query.", "q.").replace("math.", "m.")
+                if "?" in expression:
+                    condition, choices = expression.split("?", 1)
+                    yes, no = choices.split(":", 1)
+                    expression = yes if eval(condition, {"__builtins__": {}}, env) else no
+                setattr(variables, target.strip().removeprefix("variable."),
+                        eval(expression, {"__builtins__": {}}, env))
+            return variables.kraken_pitch
+
+        for horizontal, vertical, expected in [(2, 0, -90), (2, 2, -45), (2, -2, -135), (0, 2, 0), (0, -2, -180)]:
+            self.assertAlmostEqual(sample(horizontal, vertical), expected)
+        self.assertEqual(sample(0, 0, pitch=-70), -70)
+        self.assertEqual(sample(2, -2, water=False, pitch=-70), 0)
+        self.assertAlmostEqual(sample(2, 0, delta_time=1 / 60), -9)
+        model = json.loads((ROOT / "horror_kids_rp/models/entity/kraken.geo.json").read_text())["minecraft:geometry"][0]
+        self.assertEqual(next(b for b in model["bones"] if b["name"] == "body")["parent"], "swim_orientation")
+        animation = json.loads((ROOT / "horror_kids_rp/animations/kraken.animation.json").read_text())["animations"]
+        self.assertEqual(animation[client["animations"]["swim"]]["bones"]["swim_orientation"]["rotation"][0], "variable.kraken_pitch")
 
 
 if __name__ == "__main__":

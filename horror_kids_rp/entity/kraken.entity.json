@@ -18,6 +18,15 @@
       "scripts": {
         "animate": [
           "swim"
+        ],
+        "initialize": [
+          "variable.kraken_pitch = 0;"
+        ],
+        "pre_animation": [
+          "variable.kraken_target_pitch = -90 + math.atan2(query.vertical_speed, query.ground_speed);",
+          "variable.kraken_target_pitch = query.ground_speed + math.abs(query.vertical_speed) > 0.01 ? variable.kraken_target_pitch : variable.kraken_pitch;",
+          "variable.kraken_target_pitch = query.is_in_water ? variable.kraken_target_pitch : 0;",
+          "variable.kraken_pitch = math.lerprotate(variable.kraken_pitch, variable.kraken_target_pitch, math.min(1, query.delta_time * 6));"
         ]
       },
       "render_controllers": [

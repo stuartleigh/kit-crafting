@@ -140,7 +140,7 @@ separate fixed radial joints so animation cannot fold all eight underneath it.
 | Breathing | A partly submerged body is safe, even with its head above water; 15 seconds fully out of water starts land damage |
 | Persistence | No distance despawn; manual spawn only, no natural spawn rules |
 | Resistance | Full knockback resistance; not immune to land suffocation |
-| Initial rewards | 8–16 ink sacs; 50 XP when last hit by a player |
+| Rewards | Exactly 10 raw pork chops (with mob loot enabled); 50 XP when last hit by a player |
 
 This borrows the Wither's base health and boss presentation, with a close-range
 Wither-effect attack suited to tentacles. It does not reproduce the Wither's
@@ -164,11 +164,16 @@ Squid's [idle goal is restricted to the vanilla squid](https://learn.microsoft.c
 so the Kraken uses general swimming and melee components.
 
 The first laptop test (1.0.0) confirmed spawning and close-range melee, but
-found head-at-surface suffocation, bunched tentacles and no pursuit. **1.0.1
-changes all three systems and still needs an in-game retest.** Automated checks
-exercise the wet/drying/suffocating state transitions and inspect the fixed
-radial joints. Local Minecraft requires sign-in, so these checks cannot confirm
-live swimming or pursuit. After `make install-dev`, activate
+found head-at-surface suffocation, bunched tentacles and no pursuit. The user
+reported that 1.0.1 works better. Version 1.0.2 adds the pork-chop drop and a
+separate orientation joint: native body yaw handles turns, and smoothed pitch
+uses `query.ground_speed` and `query.vertical_speed` so the mantle leads while
+swimming horizontally, climbing or diving. It holds its last pitch while idle
+and returns upright on land. All tentacles inherit the orientation together.
+The rendered orientation changes the model, not its navigation/collision box.
+Automated checks exercise land/water transitions, motion-angle cases, the
+fixed radial joints and exact loot contents. **The new swimming pose still
+needs in-game verification.** After `make install-dev`, activate
 Horror Kids and Horror Kids Resources and test in Normal Survival with cheats
 available:
 
@@ -185,7 +190,7 @@ available:
    Move it fully onto dry land; after about 15 seconds check that health decreases.
    Put it back in water and check suffocation stops. This is not an instant
    death: a boss-sized health pool takes longer to exhaust than a normal squid.
-6. Kill one with mob loot enabled and check ink sacs and XP. Check the Creator
+6. Kill one with mob loot enabled and check exactly 10 raw pork chops and XP. Check the Creator
    Content Log for missing resources, unknown components or Molang errors.
 
 ## Recipes
@@ -338,7 +343,7 @@ all downloads use that hostname, with no external scripts, fonts, analytics,
 or GitHub sign-in. Minecraft's own sign-in/services are separate.
 
 After editing and testing, bump the changed mod's version (the initial split
-uses Kit Crafting 1.3.0; the Kraken fixes use Horror Kids 1.0.1), commit the changes, then
+uses Kit Crafting 1.3.0; the current Kraken update uses Horror Kids 1.0.2), commit the changes, then
 publish from `main`:
 
 ```sh

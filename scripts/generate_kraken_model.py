@@ -64,7 +64,8 @@ def cube(origin, size, tile, suckers=False):
 
 def generate():
     bones = [
-        {"name": "body", "pivot": [0, 40, 0], "cubes": [
+        {"name": "swim_orientation", "pivot": [0, 54, 0]},
+        {"name": "body", "parent": "swim_orientation", "pivot": [0, 40, 0], "cubes": [
             cube([-10, 38, -10], [20, 32, 20], 0),
             cube([-8, 70, -8], [16, 8, 16], 1),
             cube([-5, 78, -5], [10, 4, 10], 1),
@@ -81,7 +82,11 @@ def generate():
         fin_x = -17 if side < 0 else 9
         bones.append({"name": f"fin_{side}", "parent": "body", "pivot": [side * 9, 68, 0],
                       "rotation": [0, 0, side * 18], "cubes": [cube([fin_x, 67, -7], [8, 2, 14], 7)]})
-    animated = {"body": {"position": [0, "query.is_in_water ? math.sin(query.life_time * 90) * 1.2 : 0", 0],
+    # The mantle's long axis is +Y in geometry. A level swim needs -90 degrees
+    # of pitch so the mantle leads and the tentacles trail. The client computes
+    # the climb/dive angle from native horizontal/vertical speed each frame.
+    animated = {"swim_orientation": {"rotation": ["variable.kraken_pitch", 0, 0]},
+                "body": {"position": [0, "query.is_in_water ? math.sin(query.life_time * 90) * 1.2 : 0", 0],
                           "rotation": [0, 0, "query.is_in_water ? math.sin(query.life_time * 45) * 3 : 10"]}}
     for index in range(8):
         theta = index * math.pi / 4
