@@ -89,21 +89,33 @@ def generate():
         # Opposing long grasping arms give the vanilla eight-arm shape a new silhouette.
         lengths = (20, 15, 8) if index in (0, 4) else (17, 12, 6)
         y = 40
-        parent = "body"
-        for segment, (length, thickness, curl) in enumerate(zip(lengths, (3.5, 2.5, 1.5), (28, 22, -38))):
+        # Keep the radial direction and minimum splay out of the animation's
+        # rotation channels. Animating a combined pitch/yaw bone folded the
+        # original arms together in-game, which bind-pose previews missed.
+        parent = f"tentacle{index + 1}_anchor"
+        bones.append({"name": parent, "parent": "body", "pivot": [x, y, z],
+                      "rotation": [55, -index * 45, 0]})
+        for segment, (length, thickness, curl) in enumerate(zip(lengths, (3.5, 2.5, 1.5), (0, 12, -30))):
             name = f"tentacle{index + 1}_{segment}"
-            yaw = -index * 45 if segment == 0 else 0
-            bone = {"name": name, "parent": parent, "pivot": [x, y, z], "rotation": [curl, yaw, 0],
+            bone = {"name": name, "parent": parent, "pivot": [x, y, z], "rotation": [0, 0, 0],
                     "cubes": [cube([x - thickness / 2, y - length, z - thickness / 2],
                                    [thickness, length, thickness], 2, suckers=True)]}
             bones.append(bone)
             wave = f"math.sin(query.life_time * (query.has_target ? 160 : 100) + {index * 35 + segment * 40})"
-            animated[name] = {"rotation": [f"(query.is_in_water ? {curl} + {wave} * {14 if segment < 2 else 18} : {curl * 0.4}) - this", 0, 0]}
+            dry_pitch = -40 if segment == 0 else 0
+            animated[name] = {"rotation": [f"query.is_in_water ? {curl} + {wave} * {8 if segment < 2 else 12} : {dry_pitch}", 0, 0]}
             y -= length
             parent = name
+    # Align the navigation origin with the mantle's base, like vanilla squid.
+    # Hanging tentacles should not require a six-block-tall clear water path.
+    for bone in bones:
+        if "pivot" in bone:
+            bone["pivot"][1] -= 38
+        for shape in bone.get("cubes", []):
+            shape["origin"][1] -= 38
     write_json("models/entity/kraken.geo.json", {"format_version": "1.12.0", "minecraft:geometry": [{
         "description": {"identifier": f"geometry.{MODEL}", "texture_width": WIDTH, "texture_height": HEIGHT,
-                        "visible_bounds_width": 10, "visible_bounds_height": 10, "visible_bounds_offset": [0, 3.2, 0]},
+                        "visible_bounds_width": 12, "visible_bounds_height": 10, "visible_bounds_offset": [0, 1, 0]},
         "bones": bones,
     }]})
     write_json("animations/kraken.animation.json", {"format_version": "1.8.0", "animations": {

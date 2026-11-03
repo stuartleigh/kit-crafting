@@ -44,38 +44,30 @@
         "value": 1.25
       },
       "minecraft:collision_box": {
-        "width": 2.2,
-        "height": 6.4
+        "width": 1.8,
+        "height": 3.5
       },
-      "minecraft:physics": {},
+      "minecraft:physics": {
+        "has_gravity": false
+      },
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": false
       },
       "minecraft:breathable": {
-        "breathes_air": false,
+        "breathes_air": true,
         "breathes_water": true,
         "breathes_lava": false,
         "total_supply": 15,
         "suffocate_time": 0,
-        "generates_bubbles": false
+        "generates_bubbles": false,
+        "breathes_solids": false
       },
       "minecraft:movement": {
         "value": 0.25
       },
       "minecraft:underwater_movement": {
         "value": 0.25
-      },
-      "minecraft:movement.generic": {
-        "max_turn": 15
-      },
-      "minecraft:navigation.swim": {
-        "can_swim": true,
-        "can_walk": false,
-        "can_breach": false,
-        "can_jump": false,
-        "can_sink": false,
-        "can_path_over_water": false
       },
       "minecraft:follow_range": {
         "value": 32,
@@ -99,7 +91,8 @@
                   "value": true
                 }
               ]
-            }
+            },
+            "reevaluate_description": true
           }
         ]
       },
@@ -153,7 +146,8 @@
                   ]
                 }
               ]
-            }
+            },
+            "reevaluate_description": true
           }
         ]
       },
@@ -166,16 +160,156 @@
       },
       "minecraft:behavior.random_swim": {
         "priority": 6,
-        "speed_multiplier": 0.6,
-        "interval": 40,
-        "xz_dist": 12,
-        "y_dist": 6,
+        "speed_multiplier": 0.8,
+        "interval": 0,
+        "xz_dist": 16,
+        "y_dist": 8,
         "avoid_surface": true
       },
       "minecraft:behavior.look_at_player": {
         "priority": 7,
         "look_distance": 12,
         "probability": 0.02
+      },
+      "minecraft:movement.sway": {
+        "max_turn": 15,
+        "sway_amplitude": 0.02,
+        "sway_frequency": 0.5
+      },
+      "minecraft:navigation.generic": {
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": false,
+        "can_jump": false,
+        "can_sink": false,
+        "can_path_over_water": false,
+        "is_amphibious": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "value": false
+            },
+            "event": "horror_kids:kraken_beached"
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "horror_kids:kraken_swimming": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "test": "in_water",
+                "subject": "self",
+                "value": false
+              },
+              "event": "horror_kids:kraken_beached"
+            }
+          ]
+        },
+        "minecraft:physics": {
+          "has_gravity": false
+        }
+      },
+      "horror_kids:kraken_drying": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "test": "in_water",
+                "subject": "self",
+                "value": true
+              },
+              "event": "horror_kids:kraken_rehydrated"
+            }
+          ]
+        },
+        "minecraft:physics": {
+          "has_gravity": true
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 15,
+          "time_down_event": {
+            "event": "horror_kids:kraken_suffocating",
+            "target": "self"
+          }
+        }
+      },
+      "horror_kids:kraken_suffocating": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "test": "in_water",
+                "subject": "self",
+                "value": true
+              },
+              "event": "horror_kids:kraken_rehydrated"
+            }
+          ]
+        },
+        "minecraft:physics": {
+          "has_gravity": true
+        },
+        "minecraft:damage_over_time": {
+          "damage_per_hurt": 2,
+          "time_between_hurt": 1
+        }
+      }
+    },
+    "events": {
+      "horror_kids:kraken_beached": {
+        "remove": {
+          "component_groups": [
+            "horror_kids:kraken_swimming"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "horror_kids:kraken_drying"
+          ]
+        }
+      },
+      "horror_kids:kraken_rehydrated": {
+        "remove": {
+          "component_groups": [
+            "horror_kids:kraken_drying",
+            "horror_kids:kraken_suffocating"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "horror_kids:kraken_swimming"
+          ]
+        }
+      },
+      "horror_kids:kraken_suffocating": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "value": false
+            },
+            "remove": {
+              "component_groups": [
+                "horror_kids:kraken_drying"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "horror_kids:kraken_suffocating"
+              ]
+            }
+          }
+        ]
       }
     }
   }

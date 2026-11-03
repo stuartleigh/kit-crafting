@@ -122,9 +122,11 @@ longer grasping arms. It has an original light-pink pixel texture with cream
 suction cups, and a continuous swimming/curling animation that becomes faster
 when it has a target. It does not use squid-only animation variables, AI goals,
 or a vanilla runtime identifier. No vanilla squid definitions are overridden.
-The full silhouette is roughly **6.4 blocks tall** in its straight bind pose;
-use at least 10 blocks of water depth with ample room around it for testing.
-The collision box covers the central body/arm column, not each moving tentacle.
+The navigation origin now sits at the mantle's base, and the collision box
+covers the body (1.8 wide × 3.5 high) rather than the hanging tentacles. Its
+mantle is about 3.4 blocks tall visually; the arms spread out and extend below
+it. Use deep, open water with ample room around it for testing. Tentacles have
+separate fixed radial joints so animation cannot fold all eight underneath it.
 
 | Stat or behavior | First implementation |
 | --- | --- |
@@ -135,7 +137,7 @@ The collision box covers the central body/arm column, not each moving tentacle.
 | Target range | 32 blocks, with line of sight |
 | Targets | Players and fish, squid, dolphins, turtles and axolotls in water; retaliates against underwater attackers except other Krakens |
 | Movement | Free swimming and underwater wandering; no walking, flying or deliberate breaching |
-| Breathing | Water only; 15-second breath supply before suffocation on land |
+| Breathing | A partly submerged body is safe, even with its head above water; 15 seconds fully out of water starts land damage |
 | Persistence | No distance despawn; manual spawn only, no natural spawn rules |
 | Resistance | Full knockback resistance; not immune to land suffocation |
 | Initial rewards | 8–16 ink sacs; 50 XP when last hit by a player |
@@ -153,12 +155,20 @@ uses the vanilla squid's eight-arm layout as a reference, with new proportions,
 geometry, UVs and texture. Ordinary builds do not regenerate these assets.
 
 The boss uses the documented [boss HUD component](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_boss?view=minecraft-bedrock-stable),
-[swimming navigation](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_navigation.swim?view=minecraft-bedrock-stable),
-and [water-only breathing](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_breathable?view=minecraft-bedrock-stable).
+[generic swimming navigation](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_navigation.generic?view=minecraft-bedrock-stable),
+fish-style sway movement and gravity-free water physics. Head-based suffocation
+is disabled. An `in_water` environment sensor starts a 15-second land timer;
+after it expires, `damage_over_time` deals 2 HP each second. Reentering water
+cancels the timer/damage and restores swimming physics; gravity applies on land.
 Squid's [idle goal is restricted to the vanilla squid](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitygoals/minecraftbehavior_squid_idle?view=minecraft-bedrock-stable),
 so the Kraken uses general swimming and melee components.
 
-**In-game verification is still required.** After `make install-dev`, activate
+The first laptop test (1.0.0) confirmed spawning and close-range melee, but
+found head-at-surface suffocation, bunched tentacles and no pursuit. **1.0.1
+changes all three systems and still needs an in-game retest.** Automated checks
+exercise the wet/drying/suffocating state transitions and inspect the fixed
+radial joints. Local Minecraft requires sign-in, so these checks cannot confirm
+live swimming or pursuit. After `make install-dev`, activate
 Horror Kids and Horror Kids Resources and test in Normal Survival with cheats
 available:
 
@@ -171,7 +181,8 @@ available:
    attacks nearby fish or squid. Creative/Spectator players should be ignored.
 4. Spawn a second Kraken and check they do not attack each other. Return after
    saving/reopening to check persistence.
-5. Move one onto dry land; after about 15 seconds check that health decreases.
+5. Spawn it with the top of its head above water; check it remains healthy.
+   Move it fully onto dry land; after about 15 seconds check that health decreases.
    Put it back in water and check suffocation stops. This is not an instant
    death: a boss-sized health pool takes longer to exhaust than a normal squid.
 6. Kill one with mob loot enabled and check ink sacs and XP. Check the Creator
@@ -327,7 +338,7 @@ all downloads use that hostname, with no external scripts, fonts, analytics,
 or GitHub sign-in. Minecraft's own sign-in/services are separate.
 
 After editing and testing, bump the changed mod's version (the initial split
-already uses Kit Crafting 1.3.0 and Horror Kids 1.0.0), commit the changes, then
+uses Kit Crafting 1.3.0; the Kraken fixes use Horror Kids 1.0.1), commit the changes, then
 publish from `main`:
 
 ```sh

@@ -140,11 +140,11 @@ class PackTests(unittest.TestCase):
             self.assertEqual(components["minecraft:boss"]["hud_range"], 55)
             breath = components["minecraft:breathable"]
             self.assertTrue(breath["breathes_water"])
-            self.assertFalse(breath["breathes_air"])
+            self.assertTrue(breath["breathes_air"])
             self.assertFalse(breath["breathes_lava"])
             self.assertEqual(breath["total_supply"], 15)
             self.assertGreaterEqual(breath["suffocate_time"], 0)
-            navigation = components["minecraft:navigation.swim"]
+            navigation = components["minecraft:navigation.generic"]
             self.assertTrue(navigation["can_swim"])
             self.assertFalse(navigation["can_walk"])
             self.assertFalse(navigation["can_breach"])
@@ -160,7 +160,7 @@ class PackTests(unittest.TestCase):
             model = json.loads(rp.read("models/entity/kraken.geo.json"))["minecraft:geometry"][0]
             self.assertEqual(client["geometry"]["default"], model["description"]["identifier"])
             bones = {bone["name"] for bone in model["bones"]}
-            self.assertEqual(len([name for name in bones if name.startswith("tentacle")]), 24)
+            self.assertEqual(len([name for name in bones if name.startswith("tentacle") and not name.endswith("_anchor")]), 24)
             for bone in model["bones"]:
                 if "parent" in bone:
                     self.assertIn(bone["parent"], bones)
