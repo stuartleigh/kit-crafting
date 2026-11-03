@@ -1,4 +1,4 @@
-name: Check pack
+name: Check mods
 on: [push, pull_request]
 permissions:
   contents: read

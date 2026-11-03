@@ -1,0 +1,190 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.horror_kids.kraken.swim": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            "query.is_in_water ? math.sin(query.life_time * 90) * 1.2 : 0",
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            "query.is_in_water ? math.sin(query.life_time * 45) * 3 : 10"
+          ]
+        },
+        "tentacle1_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 0) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle1_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 40) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle1_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 80) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle2_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 35) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle2_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 75) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle2_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 115) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle3_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 70) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle3_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 110) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle3_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 150) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle4_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 105) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle4_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 145) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle4_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 185) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle5_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 140) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle5_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 180) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle5_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 220) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle6_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 175) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle6_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 215) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle6_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 255) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle7_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 210) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle7_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 250) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle7_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 290) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle8_0": {
+          "rotation": [
+            "(query.is_in_water ? 28 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 245) * 14 : 11.200000000000001) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle8_1": {
+          "rotation": [
+            "(query.is_in_water ? 22 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 285) * 14 : 8.8) - this",
+            0,
+            0
+          ]
+        },
+        "tentacle8_2": {
+          "rotation": [
+            "(query.is_in_water ? -38 + math.sin(query.life_time * (query.has_target ? 160 : 100) + 325) * 18 : -15.200000000000001) - this",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

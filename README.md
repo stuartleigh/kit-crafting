@@ -1,11 +1,23 @@
-# Kit Crafting
+# Kit's Minecraft Mods
 
 Minecraft Education behavior packs for version 26.32.
 
-The add-on has a behavior pack in `kit_crafting_bp/` and a resource pack in
-`kit_crafting_rp/`. Add future recipes to `kit_crafting_bp/recipes/`.
+Two independent add-ons, each with its own behavior pack, resource pack and version:
 
-## Mobs
+| Mod | Contents | Source directories |
+| --- | --- | --- |
+| Kit Crafting | Recipes, Chaos Crafting Table and Netherite Stairs | `kit_crafting_bp/`, `kit_crafting_rp/` |
+| Horror Kids | Toorantula Teerantula and the Kraken boss | `horror_kids_bp/`, `horror_kids_rp/` |
+
+Use either mod on its own or enable both in the same world. Horror Kids does
+not require Kit Crafting or its scripting module. Add future recipes to
+`kit_crafting_bp/recipes/` and future horror mobs to `horror_kids_bp/entities/`.
+Both Horror Kids mobs use the `horror_kids:` namespace.
+
+Toorantula now uses the `horror_kids:` namespace. Old Kit Crafting spider entities
+and spawn eggs are not migrated; spawn a new Toorantula after switching packs.
+
+## Horror Kids mobs
 
 ### Toorantula Teerantula
 
@@ -25,7 +37,7 @@ when the mob is invisible. The left head's green eyes are separate faces with
 an isolated colour overlay, retaining the vanilla spider's emissive eye alpha;
 the right head keeps its red eyes. No vanilla definitions are overridden.
 
-The editable Bedrock geometry is in `kit_crafting_rp/models/entity/`, with the
+The editable Bedrock geometry is in `horror_kids_rp/models/entity/`, with the
 matching animation and web render-controller files in the resource pack.
 `python3 scripts/generate_toorantula_model.py` regenerates these files from the
 model's proportions and panel placements in that script; ordinary builds use
@@ -39,7 +51,7 @@ Find **Spawn Toorantula Teerantula** in the Creative inventory, or enable cheats
 in a test world and run:
 
 ```text
-/summon kit_crafting:toorantula_teerantula ~ ~ ~
+/summon horror_kids:toorantula_teerantula ~ ~ ~
 ```
 
 The enlarged spider prototype was confirmed working in-game by the user. It is
@@ -93,6 +105,77 @@ Toorantula, collect both drops and use its dropped egg to spawn another one.
 Check the Creator Content Log for missing resources or invalid components.
 Use `make` to build the current
 development `.mcaddon`; use the release workflow below once it is verified.
+
+### Kraken boss
+
+Kraken is included in **Horror Kids**, alongside Toorantula Teerantula. Find
+**Spawn Kraken** in Creative inventory, or enable cheats and summon one in a
+deep, open ocean:
+
+```text
+/summon horror_kids:kraken ~ ~ ~
+```
+
+The model is squid-inspired, with a taller tapered mantle, small fins, large
+side-facing eyes, and eight three-segment tentacles. Two opposing tentacles are
+longer grasping arms. It has an original light-pink pixel texture with cream
+suction cups, and a continuous swimming/curling animation that becomes faster
+when it has a target. It does not use squid-only animation variables, AI goals,
+or a vanilla runtime identifier. No vanilla squid definitions are overridden.
+The full silhouette is roughly **6.4 blocks tall** in its straight bind pose;
+use at least 10 blocks of water depth with ample room around it for testing.
+The collision box covers the central body/arm column, not each moving tentacle.
+
+| Stat or behavior | First implementation |
+| --- | --- |
+| Health | 600 HP / 300 hearts, fixed across difficulties; based on the bundled Education Wither's base health |
+| Boss HUD | Named “Kraken” health bar within 55 blocks |
+| Attack | 8 base melee damage, plus Wither I for 10 seconds |
+| Attack cooldown | 1.5 seconds; armour and difficulty affect actual damage |
+| Target range | 32 blocks, with line of sight |
+| Targets | Players and fish, squid, dolphins, turtles and axolotls in water; retaliates against underwater attackers except other Krakens |
+| Movement | Free swimming and underwater wandering; no walking, flying or deliberate breaching |
+| Breathing | Water only; 15-second breath supply before suffocation on land |
+| Persistence | No distance despawn; manual spawn only, no natural spawn rules |
+| Resistance | Full knockback resistance; not immune to land suffocation |
+| Initial rewards | 8–16 ink sacs; 50 XP when last hit by a player |
+
+This borrows the Wither's base health and boss presentation, with a close-range
+Wither-effect attack suited to tentacles. It does not reproduce the Wither's
+projectiles, explosions, block breaking, summoning phase or half-health phases.
+Health is fixed at 600; it does not reproduce the vanilla Wither's internal
+difficulty-based health adjustments. Loot and encounter balance are initial
+choices and can be tuned after playing.
+
+`python3 scripts/generate_kraken_model.py` regenerates the checked-in geometry,
+animation and original PNG texture using Python's standard library. The design
+uses the vanilla squid's eight-arm layout as a reference, with new proportions,
+geometry, UVs and texture. Ordinary builds do not regenerate these assets.
+
+The boss uses the documented [boss HUD component](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_boss?view=minecraft-bedrock-stable),
+[swimming navigation](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_navigation.swim?view=minecraft-bedrock-stable),
+and [water-only breathing](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_breathable?view=minecraft-bedrock-stable).
+Squid's [idle goal is restricted to the vanilla squid](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitygoals/minecraftbehavior_squid_idle?view=minecraft-bedrock-stable),
+so the Kraken uses general swimming and melee components.
+
+**In-game verification is still required.** After `make install-dev`, activate
+Horror Kids and Horror Kids Resources and test in Normal Survival with cheats
+available:
+
+1. Summon it in deep open water. Check pink skin, eyes, suction cups and all
+   eight tentacles. Check that it swims up and down rather than sitting on the
+   bottom, and that its large collision box can move through the test area.
+2. Approach within 55 blocks; damage it and check that the Kraken health bar
+   falls. Move beyond 55 blocks to check the bar disappears.
+3. Check it pursues and hits a Survival player in water, applies Wither, and
+   attacks nearby fish or squid. Creative/Spectator players should be ignored.
+4. Spawn a second Kraken and check they do not attack each other. Return after
+   saving/reopening to check persistence.
+5. Move one onto dry land; after about 15 seconds check that health decreases.
+   Put it back in water and check suffocation stops. This is not an instant
+   death: a boss-sized health pool takes longer to exhaust than a normal squid.
+6. Kill one with mob loot enabled and check ink sacs and XP. Check the Creator
+   Content Log for missing resources, unknown components or Molang errors.
 
 ## Recipes
 
@@ -174,112 +257,140 @@ N N N
 
 ## Build, version, and install
 
-The Makefile requires `jq`, `zip`, `unzip`, and `rsync`; publishing also uses
-Python 3 and Git. Development happens on the Mac; the Windows laptop needs
-only Minecraft Education and a browser.
+Requires Python 3.9+, Node 20+ for tests, Git for publishing, and `rsync` for
+development installation. Builds use Python's standard library; no npm install
+is needed. Development happens on the Mac; the Windows laptop needs only
+Minecraft Education and a browser.
 
 ```sh
-make                 # validate and build the current version
-make install-dev     # update Minecraft's single development copy
-make chaos           # regenerate chaos copies after adding/editing recipes
-make test            # check reward logic and inventory transactions (Node 20+)
-make version         # print the current manifest version
-make bump-patch      # 1.0.1 -> 1.0.2
-make bump-minor      # 1.0.1 -> 1.1.0
-make bump-major      # 1.0.1 -> 2.0.0
-make release-patch   # bump patch and immediately build
-make release-minor   # bump minor and immediately build
-make release-major   # bump major and immediately build
+make                         # validate and build ALL mods
+make site                    # build all downloads and the page in _site/
+make install-dev             # synchronize all four development packs
+make chaos                   # regenerate chaos data after editing recipes
+make test                    # reward logic, pack separation and release checks
+make version                 # Kit Crafting version
+make version MOD=horror-kids  # Horror Kids version
+make bump-patch               # bump only Kit Crafting
+make bump-minor MOD=horror-kids
+make release-patch MOD=horror-kids  # bump Horror Kids, then build all
 ```
 
-Version bumps update both packs' manifest header and module versions. `make`
-builds `dist/Kit-Crafting-<version>.mcaddon`, which contains both packs for one
-step import into Minecraft Education.
+`MOD` defaults to `kit-crafting`. Version bumps and `release-patch`,
+`release-minor`, and `release-major` change only the selected mod. Its behavior
+and resource pack header/module versions and resource dependency stay in sync;
+the other mods' versions stay unchanged. `make` always builds both mods:
+
+- `dist/Kit-Crafting-<version>.mcaddon`
+- `dist/Horror-Kids-<version>.mcaddon`
+
+Each `.mcaddon` contains that mod's two `.mcpack` files for one-step import.
+Every build recreates its archives, removing files deleted or moved since a
+previous build. Manifests have distinct UUIDs so the mods can coexist.
 
 ## Development workflow
 
-Use `make install-dev` while developing instead of importing each `.mcpack`.
-It synchronizes the source into Minecraft Education's single development pack:
+Use `make install-dev` instead of importing each package while developing. It
+synchronizes all source packs into these Minecraft Education directories:
 
 ```text
 development_behavior_packs/KitCrafting/
 development_resource_packs/KitCrafting-Resources/
+development_behavior_packs/HorrorKids/
+development_resource_packs/HorrorKids-Resources/
 ```
 
-The target deletes stale files only inside that specific development-pack
-directory. After installing, leave and re-enter the test world so recipe changes
-are reloaded. Keep the manifest version unchanged during ordinary development;
-use a `release-*` target when producing a package for distribution.
+Stale files are deleted only inside these four development-pack directories.
+Leave and re-enter your test world after installation. Activate the behavior
+and resource packs for the mods you are testing. Deactivate old imported copies
+before switching to development packs. Replace existing prototype spiders with
+new Horror Kids spawn eggs or `/summon horror_kids:toorantula_teerantula`.
 
-The default Minecraft data path is for Minecraft Education on macOS. Override it
-when necessary:
+The default Minecraft data path is for Education on macOS. Override it with:
 
 ```sh
 make install-dev MINECRAFT_DATA_DIR="/path/to/games/com.mojang"
 ```
 
-Before switching to this workflow, deactivate imported Kit Crafting versions in
-the test world and delete the old imported copies from Minecraft's Storage
-screen. Then activate the development copy once.
-
 ## Publish updates to Windows
 
 Repository: https://github.com/stuartleigh/kit-crafting
 
-Bookmark: https://stuartleigh.github.io/kit-crafting/
+Download page: https://stuartleigh.github.io/kit-crafting/
 
-Permanent pack URL: https://stuartleigh.github.io/kit-crafting/Kit-Crafting.mcaddon
+Both downloads are hosted on the same page:
+
+- https://stuartleigh.github.io/kit-crafting/Kit-Crafting.mcaddon
+- https://stuartleigh.github.io/kit-crafting/Horror-Kids.mcaddon
 
 Allow `https://stuartleigh.github.io` in Microsoft Family Safety. The page and
-download are hosted on that same hostname with no external scripts, fonts,
-analytics, or GitHub sign-in. This hostname can also serve other Pages projects
-from this personal account. There is no need to allow all of github.com or
-all github.io sites. Minecraft's own sign-in/services are separate.
+all downloads use that hostname, with no external scripts, fonts, analytics,
+or GitHub sign-in. Minecraft's own sign-in/services are separate.
 
-After editing and testing on the Mac:
+After editing and testing, bump the changed mod's version (the initial split
+already uses Kit Crafting 1.3.0 and Horror Kids 1.0.0), commit the changes, then
+publish from `main`:
 
 ```sh
+# A future Kit Crafting update:
 make release-patch
-git add Makefile README.md kit_crafting_bp kit_crafting_rp scripts site .github .gitignore
+git add Makefile README.md kit_crafting_bp kit_crafting_rp horror_kids_bp horror_kids_rp scripts tests site .github
 git commit -m "Describe the update"
 make publish
+
+# A future Horror Kids update:
+make release-patch MOD=horror-kids
+git add horror_kids_bp horror_kids_rp
+git commit -m "Describe the mob update"
+make publish MOD=horror-kids
+
+# A future Kraken update:
+make release-patch MOD=kraken
+git add
+git commit -m "Describe the Kraken update"
+make publish MOD=kraken
 ```
 
-`make publish` checks the build and clean working tree, creates a version tag,
-and pushes main and that tag together. The tag starts the GitHub Pages deployment.
-Ordinary commits/pushes run checks but do not publish. Check the Actions page for
-deployment success before downloading; publication and CDN refresh can take a
-few minutes. The download button includes the version to avoid an old cached file.
-The stable direct file URL is also available, along with `version.json` containing
-the published version and SHA-256 checksum.
+`make publish` runs checks, requires a clean working tree on `main`, then pushes
+`main` and the selected mod's tag atomically. Kit Crafting uses `vX.Y.Z` tags;
+Horror Kids uses `horror-kids-vX.Y.Z`. Either release tag builds and deploys the
+complete page with both current downloads. Ordinary
+pushes only run checks. If several mods changed, bump each changed mod and
+publish once using any changed mod's new tag.
 
-Never change the manifest UUIDs for an update. Increase the version for every
-published change, including rollbacks (restore the old content in a new version).
-Do not delete or move published version tags. If a push fails after a local tag
-was created, retry `git push --atomic origin main vX.Y.Z` for that version.
-If a deployment fails, fix the cause and rerun the failed workflow in GitHub Actions.
+The workflow checks the tag against the selected mod's manifest. Never change a
+mod's UUIDs for an update or reuse published version tags. If a push fails after
+creating a local tag, retry `git push --atomic origin main <tag>`. Check the
+Actions deployment result before downloading; CDN refresh can take a few minutes.
 
-On Windows, save and exit the world, download, and open the `.mcaddon` with
-Minecraft Education. Activate both packs on first use. Importing a higher version
-updates the installed packs; check the existing world's active versions after
-the first upgrade. Back up important worlds before updating. This is a manual
-download/import workflow, not a background updater, and requires no GitHub credentials
-or development tools on Windows.
+Download links include each mod's version for cache refresh. `_site/mods.json`
+lists all versions, filenames and SHA-256 checksums. `version.json` contains
+Kit Crafting's metadata; `horror-kids-version.json` contains Horror Kids' metadata.
+
+On Windows, save and exit the world, download the desired `.mcaddon` files,
+and open each with Minecraft Education. In world settings activate the selected
+mod's Behavior Pack and matching Resources pack. Use updated Kit Crafting 1.3.0
+or later alongside Horror Kids; older Kit Crafting releases still include the
+prototype spider. Back up important worlds before updating. No development
+tools or GitHub account are needed on Windows.
 
 ## Hosting setup and verification
 
-GitHub Pages must use **GitHub Actions** as its publishing source. The `github-pages`
-environment must permit deployment from release tags (`v*`). The repository's
-Actions tab shows checks and deployments. No personal access token is stored in
-the project: deployment uses GitHub's temporary workflow credentials.
+GitHub Pages must use **GitHub Actions** as its source. The `github-pages`
+environment must allow deployment from both tag patterns: `v*` and
+`horror-kids-v*`. The repository's Actions tab shows checks and deployments.
+Deployment uses GitHub's temporary workflow credentials.
 
-`make site` builds a local preview in `_site/`. `make validate` checks JSON syntax;
-the site builder also verifies matching pack/module versions and the resource
-dependency. These checks do not validate Minecraft's runtime compatibility.
+`make site` builds a local preview in `_site/`. Validation checks JSON syntax,
+unique pack/module UUIDs, version consistency and independent resource/script
+dependencies. Automated tests inspect nested downloads, mob/resource separation,
+model references, independent version bumps, download URLs and checksums.
+These checks do not validate Minecraft runtime compatibility. Verify the renamed
+Horror Kids and Kraken spawn eggs, summon commands, rendering, combat and loot
+in-game, including the Kraken boss bar and land suffocation.
 
 Netherite Stairs remain experimental: registration has not yet been confirmed
 in Minecraft Education, and the current definition has fixed orientation and
-full-block collision. Publishing this pack does not resolve that outstanding issue.
+full-block collision.
 
 The Netherite texture originates from Minecraft's game assets; it is not an
 original Kit Crafting asset. No blanket open-source license is granted for it.

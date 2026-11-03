@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "horror_kids:kraken",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/kraken"
+      },
+      "geometry": {
+        "default": "geometry.horror_kids.kraken"
+      },
+      "animations": {
+        "swim": "animation.horror_kids.kraken.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.horror_kids.kraken"
+      ],
+      "spawn_egg": {
+        "base_color": "#f5b8ca",
+        "overlay_color": "#b45e80"
+      }
+    }
+  }
+}

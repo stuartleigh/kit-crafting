@@ -8,8 +8,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RP = ROOT / "kit_crafting_rp"
-MODEL = "kit_crafting.toorantula_teerantula"
+RP = ROOT / "horror_kids_rp"
+MODEL = "horror_kids.toorantula_teerantula"
 
 
 def write(relative, value):

@@ -1,0 +1,182 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "horror_kids:kraken",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "kraken",
+          "aquatic",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:persistent": {},
+      "minecraft:boss": {
+        "name": "Kraken",
+        "hud_range": 55,
+        "should_darken_sky": false
+      },
+      "minecraft:health": {
+        "value": 600,
+        "max": 600
+      },
+      "minecraft:attack": {
+        "damage": 8,
+        "effect_name": "wither",
+        "effect_duration": 10
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 50 : 0"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/kraken.json"
+      },
+      "minecraft:scale": {
+        "value": 1.25
+      },
+      "minecraft:collision_box": {
+        "width": 2.2,
+        "height": 6.4
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:breathable": {
+        "breathes_air": false,
+        "breathes_water": true,
+        "breathes_lava": false,
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "generates_bubbles": false
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.25
+      },
+      "minecraft:movement.generic": {
+        "max_turn": 15
+      },
+      "minecraft:navigation.swim": {
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": false,
+        "can_jump": false,
+        "can_sink": false,
+        "can_path_over_water": false
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 32
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "kraken"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "value": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 32,
+        "entity_types": [
+          {
+            "max_dist": 32,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "value": true
+                },
+                {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "fish"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "squid"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "dolphin"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "turtle"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "axolotl"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.2,
+        "track_target": true,
+        "cooldown_time": 1.5,
+        "reach_multiplier": 1.25
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 6,
+        "speed_multiplier": 0.6,
+        "interval": 40,
+        "xz_dist": 12,
+        "y_dist": 6,
+        "avoid_surface": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 12,
+        "probability": 0.02
+      }
+    }
+  }
+}

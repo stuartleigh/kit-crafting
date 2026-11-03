@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "horror_kids:toorantula_teerantula",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible",
+        "web": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/spider/spider",
+        "web": "textures/blocks/web"
+      },
+      "geometry": {
+        "default": "geometry.horror_kids.toorantula_teerantula",
+        "web": "geometry.horror_kids.toorantula_teerantula.web"
+      },
+      "animations": {
+        "default_leg_pose": "animation.horror_kids.toorantula_teerantula.default_leg_pose",
+        "look_at_target": "animation.horror_kids.toorantula_teerantula.look_at_target",
+        "walk": "animation.horror_kids.toorantula_teerantula.walk"
+      },
+      "animation_controllers": [
+        {"move": "controller.animation.spider.move"}
+      ],
+      "render_controllers": [
+        "controller.render.horror_kids.toorantula_teerantula.body",
+        "controller.render.horror_kids.toorantula_teerantula.green_eyes",
+        "controller.render.horror_kids.toorantula_teerantula.web"
+      ],
+      "spawn_egg": {
+        "base_color": "#302332",
+        "overlay_color": "#e6e1df"
+      }
+    }
+  }
+}

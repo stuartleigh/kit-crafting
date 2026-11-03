@@ -1,25 +1,36 @@
-"""Build a self-contained download site and verify pack version relationships."""
+"""Build all downloads and their version/checksum metadata for GitHub Pages."""
 import hashlib
 import json
-from pathlib import Path
 import shutil
 
-root = Path(__file__).resolve().parent.parent
-bp = json.loads((root / "kit_crafting_bp/manifest.json").read_text())
-rp = json.loads((root / "kit_crafting_rp/manifest.json").read_text())
-version = bp["header"]["version"]
-assert rp["header"]["version"] == version, "Pack versions differ"
-for pack in (bp, rp):
-    assert all(m["version"] == version for m in pack["modules"]), "Module versions differ"
-assert [d for d in bp["dependencies"] if "uuid" in d] == [{"uuid": rp["header"]["uuid"], "version": version}], "Resource dependency differs"
-assert [d for d in bp["dependencies"] if "module_name" in d] == [{"module_name": "@minecraft/server", "version": "2.0.0"}], "Script dependency differs"
-version_text = ".".join(map(str, version))
-source = root / "dist" / f"Kit-Crafting-{version_text}.mcaddon"
-site = root / "_site"
-site.mkdir(exist_ok=True)
-shutil.copyfile(source, site / "Kit-Crafting.mcaddon")
-digest = hashlib.sha256(source.read_bytes()).hexdigest()
-(site / "version.json").write_text(json.dumps({"version": version_text, "file": "Kit-Crafting.mcaddon", "sha256": digest}, indent=2) + "\n")
-(site / "index.html").write_text((root / "site/index.html").read_text().replace("{{VERSION}}", version_text))
-(site / ".nojekyll").touch()
-print(f"Built download site for {version_text} ({digest})")
+from packs import MODS, ROOT, validate
+
+
+def build_site(root=ROOT):
+    validate(root)
+    site = root / "_site"
+    site.mkdir(exist_ok=True)
+    template = (root / "site/index.html").read_text()
+    catalog = {}
+    for mod in MODS:
+        version = mod.version(root)
+        source = root / "dist" / f"{mod.package}-{version}.mcaddon"
+        filename = f"{mod.package}.mcaddon"
+        shutil.copyfile(source, site / filename)
+        metadata = {"version": version, "file": filename,
+                    "sha256": hashlib.sha256(source.read_bytes()).hexdigest()}
+        catalog[mod.id] = {"name": mod.name, **metadata}
+        # Preserve the original Kit Crafting version.json URL and schema.
+        metadata_file = "version.json" if mod.id == "kit-crafting" else f"{mod.id}-version.json"
+        (site / metadata_file).write_text(json.dumps(metadata, indent=2) + "\n")
+        template = template.replace("{{" + mod.id.upper().replace("-", "_") + "_VERSION}}", version)
+        print(f"Prepared {mod.name} {version}")
+    if "{{" in template:
+        raise ValueError("Unresolved site template placeholder")
+    (site / "mods.json").write_text(json.dumps(catalog, indent=2) + "\n")
+    (site / "index.html").write_text(template)
+    (site / ".nojekyll").touch()
+
+
+if __name__ == "__main__":
+    build_site()

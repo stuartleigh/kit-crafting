@@ -1,7 +1,7 @@
 {
   "format_version": "1.8.0",
   "animations": {
-    "animation.kit_crafting.toorantula_teerantula.default_leg_pose": {
+    "animation.horror_kids.toorantula_teerantula.default_leg_pose": {
       "loop": true,
       "bones": {
         "left_leg0": {
@@ -118,7 +118,7 @@
         }
       }
     },
-    "animation.kit_crafting.toorantula_teerantula.look_at_target": {
+    "animation.horror_kids.toorantula_teerantula.look_at_target": {
       "loop": true,
       "bones": {
         "left_head": {
@@ -137,7 +137,7 @@
         }
       }
     },
-    "animation.kit_crafting.toorantula_teerantula.walk": {
+    "animation.horror_kids.toorantula_teerantula.walk": {
       "loop": true,
       "anim_time_update": "query.modified_distance_moved",
       "bones": {

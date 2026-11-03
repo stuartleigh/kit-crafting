@@ -8,7 +8,7 @@
           "name": "minecraft:spawn_egg",
           "functions": [
             {"function": "set_count", "count": 1},
-            {"function": "set_actor_id", "id": "kit_crafting:toorantula_teerantula"}
+            {"function": "set_actor_id", "id": "horror_kids:toorantula_teerantula"}
           ]
         }
       ]

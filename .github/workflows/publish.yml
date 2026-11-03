@@ -1,7 +1,7 @@
-name: Publish pack
+name: Publish mods
 on:
   push:
-    tags: ['v*']
+    tags: ['v*', 'horror-kids-v*']
 permissions:
   contents: read
 concurrency:
@@ -13,7 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Check release version
-        run: test "$GITHUB_REF_NAME" = "v$(make -s version)"
+        run: |
+          case "$GITHUB_REF_NAME" in
+            horror-kids-v*) mod=horror-kids ;;
+            v*) mod=kit-crafting ;;
+            *) exit 1 ;;
+          esac
+          test "$GITHUB_REF_NAME" = "$(make -s tag MOD="$mod")"
       - run: make test site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

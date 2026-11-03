@@ -1,7 +1,7 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
-    "controller.render.kit_crafting.toorantula_teerantula.body": {
+    "controller.render.horror_kids.toorantula_teerantula.body": {
       "arrays": {
         "materials": {
           "Array.materials": [
@@ -25,7 +25,7 @@
         }
       ]
     },
-    "controller.render.kit_crafting.toorantula_teerantula.green_eyes": {
+    "controller.render.horror_kids.toorantula_teerantula.green_eyes": {
       "arrays": {
         "materials": {
           "Array.materials": [
@@ -58,7 +58,7 @@
         "a": 1
       }
     },
-    "controller.render.kit_crafting.toorantula_teerantula.web": {
+    "controller.render.horror_kids.toorantula_teerantula.web": {
       "geometry": "Geometry.web",
       "materials": [
         {

@@ -2,7 +2,7 @@
   "format_version": "1.21.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kit_crafting:toorantula_teerantula",
+      "identifier": "horror_kids:toorantula_teerantula",
       "is_spawnable": true,
       "is_summonable": true
     },
