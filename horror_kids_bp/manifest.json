@@ -2,12 +2,12 @@
   "format_version": 2,
   "header": {
     "name": "Horror Kids",
-    "description": "Custom horror mobs: Toorantula Teerantula and the Kraken boss.",
+    "description": "Custom horror mobs: Toorantula Teerantula, the Kraken boss and The Light Saver.",
     "uuid": "384fbccd-6962-4c4e-bc7f-74579bb5f8b3",
     "version": [
       1,
-      0,
-      2
+      1,
+      0
     ],
     "min_engine_version": [
       1,
@@ -21,8 +21,8 @@
       "uuid": "baddbb8f-4bc2-4ee1-b2a8-832e4e858c72",
       "version": [
         1,
-        0,
-        2
+        1,
+        0
       ]
     }
   ],
@@ -31,8 +31,8 @@
       "uuid": "d3f1bbee-32ad-4857-a256-62821aaf1365",
       "version": [
         1,
-        0,
-        2
+        1,
+        0
       ]
     }
   ]

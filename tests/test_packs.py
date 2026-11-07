@@ -105,24 +105,28 @@ class PackTests(unittest.TestCase):
         self.preserve_manifests()
         kit, horror = MODS[:2]
         kit_before = [kit.manifest(self.root, kind) for kind in ("bp", "rp")]
+        horror_version = horror.manifest(self.root, "bp")["header"]["version"]
+        next_horror = f"{horror_version[0]}.{horror_version[1] + 1}.0"
+        kit_version = kit.manifest(self.root, "bp")["header"]["version"]
+        next_kit = f"{kit_version[0]}.{kit_version[1]}.{kit_version[2] + 1}"
         horror_ids = [horror.manifest(self.root, kind)["header"]["uuid"] for kind in ("bp", "rp")]
         bump(horror, "minor", self.root)
-        self.assertEqual(horror.version(self.root), "1.1.0")
+        self.assertEqual(horror.version(self.root), next_horror)
         self.assertEqual([kit.manifest(self.root, kind) for kind in ("bp", "rp")], kit_before)
         self.assertEqual([horror.manifest(self.root, kind)["header"]["uuid"] for kind in ("bp", "rp")], horror_ids)
-        self.assertEqual(horror.tag(self.root), "horror-kids-v1.1.0")
+        self.assertEqual(horror.tag(self.root), "horror-kids-v" + next_horror)
         self.assertEqual(kit.tag(self.root), "v" + kit.version(self.root))
         bump(kit, "patch", self.root)
-        self.assertEqual(kit.version(self.root), "1.3.1")
-        self.assertEqual(horror.version(self.root), "1.1.0")
+        self.assertEqual(kit.version(self.root), next_kit)
+        self.assertEqual(horror.version(self.root), next_horror)
         validate(self.root)
         package(self.root)
         build_site(self.root)
         catalog = json.loads((self.root / "_site/mods.json").read_text())
-        self.assertEqual(catalog[kit.id]["version"], "1.3.1")
-        self.assertEqual(catalog[horror.id]["version"], "1.1.0")
+        self.assertEqual(catalog[kit.id]["version"], next_kit)
+        self.assertEqual(catalog[horror.id]["version"], next_horror)
 
-    def test_horror_kids_includes_both_mobs_and_complete_kraken_resources(self):
+    def test_horror_kids_includes_all_mobs_and_complete_kraken_resources(self):
         mod = MODS[1]
         with self.packed(mod, "bp") as bp, self.packed(mod, "rp") as rp:
             manifest = json.loads(bp.read("manifest.json"))
@@ -130,7 +134,8 @@ class PackTests(unittest.TestCase):
             self.assertEqual(len(manifest["dependencies"]), 1)
             self.assertFalse(any(p.startswith("spawn_rules/") for p in bp.namelist()))
             self.assertEqual({p for p in bp.namelist() if p.startswith("entities/")},
-                             {"entities/kraken.json", "entities/toorantula_teerantula.json"})
+                             {"entities/kraken.json", "entities/toorantula_teerantula.json",
+                              "entities/light_saver.json"})
             entity = json.loads(bp.read("entities/kraken.json"))["minecraft:entity"]
             self.assertEqual(entity["description"]["identifier"], "horror_kids:kraken")
             self.assertNotIn("runtime_identifier", entity["description"])

@@ -1,0 +1,59 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "horror_kids:light_saver",
+      "runtime_identifier": "minecraft:vex",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": {"family": ["light_saver", "monster", "mob"]},
+      "minecraft:nameable": {},
+      "minecraft:persistent": {},
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:health": {"value": 8, "max": 8},
+      "minecraft:attack": {"damage": 6},
+      "minecraft:collision_box": {"width": 0.36, "height": 1.2},
+      "minecraft:physics": {"has_collision": false, "has_gravity": false},
+      "minecraft:movement": {"value": 1.0},
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {"can_path_over_water": true},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:follow_range": {"value": 24, "max": 24},
+      "minecraft:experience_reward": {"on_death": "query.last_hit_by_player ? 5 : 0"},
+      "minecraft:behavior.float": {"priority": 0},
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": [{"filters": {"all_of": [
+          {"test": "has_component", "subject": "other", "value": "minecraft:health"},
+          {"test": "is_family", "subject": "other", "operator": "!=", "value": "light_saver"}
+        ]}}]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 24,
+        "entity_types": [{
+          "max_dist": 24,
+          "reevaluate_description": true,
+          "filters": {"all_of": [
+            {"test": "has_component", "subject": "other", "value": "minecraft:health"},
+            {"test": "is_family", "subject": "other", "operator": "!=", "value": "light_saver"}
+          ]}
+        }]
+      },
+      "minecraft:behavior.charge_attack": {
+        "priority": 3,
+        "min_distance": 0,
+        "max_distance": 24,
+        "speed_multiplier": 1.2,
+        "success_rate": 0.1428
+      },
+      "minecraft:behavior.look_at_player": {"priority": 8, "look_distance": 8},
+      "minecraft:behavior.random_look_around": {"priority": 9}
+    }
+  }
+}

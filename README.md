@@ -7,17 +7,63 @@ Two independent add-ons, each with its own behavior pack, resource pack and vers
 | Mod | Contents | Source directories |
 | --- | --- | --- |
 | Kit Crafting | Recipes, Chaos Crafting Table and Netherite Stairs | `kit_crafting_bp/`, `kit_crafting_rp/` |
-| Horror Kids | Toorantula Teerantula and the Kraken boss | `horror_kids_bp/`, `horror_kids_rp/` |
+| Horror Kids | Toorantula Teerantula, the Kraken boss and The Light Saver | `horror_kids_bp/`, `horror_kids_rp/` |
 
 Use either mod on its own or enable both in the same world. Horror Kids does
 not require Kit Crafting or its scripting module. Add future recipes to
 `kit_crafting_bp/recipes/` and future horror mobs to `horror_kids_bp/entities/`.
-Both Horror Kids mobs use the `horror_kids:` namespace.
+All Horror Kids mobs use the `horror_kids:` namespace.
 
 Toorantula now uses the `horror_kids:` namespace. Old Kit Crafting spider entities
 and spawn eggs are not migrated; spawn a new Toorantula after switching packs.
 
 ## Horror Kids mobs
+
+### The Light Saver
+
+Added in Horror Kids **1.1.0**. A yellow zombie-style humanoid with red eyes
+and a small golden sword in each hand. "40% smaller" means a 0.6 visual scale:
+about 1.2 blocks tall, with a 0.36 × 1.2 collision/hit box. Both swords are part
+of the model and inherit its scale and arm animations. They are visual weapons,
+not equipment or additional damage modifiers, and do not drop on death.
+The original lemon/ochre pixel atlas gives it mottled skin and yellow clothing;
+it does not redistribute a recoloured vanilla skin.
+
+It has **8 HP (4 hearts)** and deals **6 base melee damage** per charge hit,
+matching the direct-impact value in Education's bundled ghast fireball. Actual
+damage varies with armour and difficulty; this does not add explosion damage.
+It awards 5 XP when last hit by a player, with no special item loot.
+
+It uses the `minecraft:vex` runtime and the bundled Vex movement/physics stack
+for native flight, wandering, block phasing and charging. The documented
+[charge attack goal](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/entitygoals/minecraftbehavior_charge_attack?view=minecraft-bedrock-stable)
+allows lunges up to its 24-block target range. The animation leans forward and
+raises both swords while charging. It is persistent, manually spawned, and
+has no owner, summoned lifespan or natural spawn rules. Unlike a zombie it
+does not burn in daylight. Vex runtime inheritance is deliberate here because
+its native flight and charge state drive this mob's behavior and animation.
+
+Both proactive targeting and retaliation accept entities with health and
+exclude the `light_saver` family. It attacks passive, neutral and hostile mobs,
+including the other Horror Kids bosses. Items and projectiles are not combat
+targets; Creative/Spectator players and invulnerable entities remain protected
+by Minecraft's normal combat rules. There is no player-only target whitelist.
+
+Find **Spawn The Light Saver** in Creative, or use:
+
+```text
+/summon horror_kids:light_saver ~ ~ ~
+```
+
+`python3 scripts/generate_light_saver_model.py` regenerates its geometry,
+animation and original texture. The build checks cover target exclusions,
+packaged resources, sword attachment and proportions. **No in-game test was
+run on this computer**, as requested. On the kids' laptop, import 1.1.0,
+activate both Horror Kids packs, and check the appearance, free flight and
+lunges in a Normal test world. Use Survival to check player attacks, then
+spawn a chicken, zombie, Vex and another Light Saver: all except the other
+Light Saver should be targeted. Check that it can be killed easily and that
+both swords stay attached while it turns, charges and takes damage.
 
 ### Toorantula Teerantula
 
@@ -343,7 +389,7 @@ all downloads use that hostname, with no external scripts, fonts, analytics,
 or GitHub sign-in. Minecraft's own sign-in/services are separate.
 
 After editing and testing, bump the changed mod's version (the initial split
-uses Kit Crafting 1.3.0; the current Kraken update uses Horror Kids 1.0.2), commit the changes, then
+uses Kit Crafting 1.3.0; The Light Saver uses Horror Kids 1.1.0), commit the changes, then
 publish from `main`:
 
 ```sh
@@ -359,11 +405,6 @@ git add horror_kids_bp horror_kids_rp
 git commit -m "Describe the mob update"
 make publish MOD=horror-kids
 
-# A future Kraken update:
-make release-patch MOD=kraken
-git add
-git commit -m "Describe the Kraken update"
-make publish MOD=kraken
 ```
 
 `make publish` runs checks, requires a clean working tree on `main`, then pushes

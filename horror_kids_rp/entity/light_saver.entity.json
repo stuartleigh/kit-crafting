@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "horror_kids:light_saver",
+      "materials": {"default": "entity_alphatest"},
+      "textures": {"default": "textures/entity/light_saver"},
+      "geometry": {"default": "geometry.horror_kids.light_saver"},
+      "animations": {"fly": "animation.horror_kids.light_saver.fly"},
+      "scripts": {"scale": "0.6", "animate": ["fly"]},
+      "render_controllers": ["controller.render.horror_kids.light_saver"],
+      "spawn_egg": {"base_color": "#f6da3d", "overlay_color": "#eb181e"}
+    }
+  }
+}
