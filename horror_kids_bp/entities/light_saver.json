@@ -27,7 +27,10 @@
       "minecraft:behavior.hurt_by_target": {
         "priority": 1,
         "entity_types": [{"filters": {"all_of": [
-          {"test": "has_component", "subject": "other", "value": "minecraft:health"},
+          {"any_of": [
+            {"test": "is_family", "subject": "other", "value": "player"},
+            {"test": "has_component", "subject": "other", "value": "minecraft:health"}
+          ]},
           {"test": "is_family", "subject": "other", "operator": "!=", "value": "light_saver"}
         ]}}]
       },
@@ -40,7 +43,10 @@
           "max_dist": 24,
           "reevaluate_description": true,
           "filters": {"all_of": [
-            {"test": "has_component", "subject": "other", "value": "minecraft:health"},
+            {"any_of": [
+              {"test": "is_family", "subject": "other", "value": "player"},
+              {"test": "has_component", "subject": "other", "value": "minecraft:health"}
+            ]},
             {"test": "is_family", "subject": "other", "operator": "!=", "value": "light_saver"}
           ]}
         }]

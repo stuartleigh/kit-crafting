@@ -16,6 +16,8 @@ from packs import MODS, ROOT, package
 def matches_filter(rule, families, has_health=True):
     if "all_of" in rule:
         return all(matches_filter(child, families, has_health) for child in rule["all_of"])
+    if "any_of" in rule:
+        return any(matches_filter(child, families, has_health) for child in rule["any_of"])
     assert rule["subject"] == "other"
     if rule["test"] == "has_component":
         assert rule["value"] == "minecraft:health"
@@ -47,6 +49,16 @@ class LightSaverTests(unittest.TestCase):
             self.assertFalse(any(matches_filter(r["filters"], family) for r in rules))
             for families in ({"item"}, {"projectile"}, {"xp_orb"}):
                 self.assertFalse(any(matches_filter(r["filters"], families, False) for r in rules))
+
+    def test_player_targeting_does_not_require_a_mob_health_component(self):
+        # Players have native health; don't require their JSON component layout
+        # to match ordinary mobs. Cover both first contact and retaliation.
+        for goal in ("nearest_attackable_target", "hurt_by_target"):
+            rules = self.components["minecraft:behavior." + goal]["entity_types"]
+            with self.subTest(goal=goal):
+                self.assertTrue(any(matches_filter(r["filters"], {"player"}, False) for r in rules))
+                self.assertFalse(any(matches_filter(r["filters"], {"player", "light_saver"}, False)
+                                     for r in rules))
 
     def test_native_vex_flight_charge_and_frail_stats(self):
         c = self.components

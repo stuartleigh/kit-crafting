@@ -43,8 +43,11 @@ has no owner, summoned lifespan or natural spawn rules. Unlike a zombie it
 does not burn in daylight. Vex runtime inheritance is deliberate here because
 its native flight and charge state drive this mob's behavior and animation.
 
-Both proactive targeting and retaliation accept entities with health and
-exclude the `light_saver` family. It attacks passive, neutral and hostile mobs,
+Both proactive targeting and retaliation explicitly accept the `player` family
+or entities with health, then exclude the `light_saver` family. The explicit
+player branch was added in **1.1.1**: requiring a declared `minecraft:health`
+component excluded players in 1.1.0, despite their native health.
+It attacks passive, neutral and hostile mobs,
 including the other Horror Kids bosses. Items and projectiles are not combat
 targets; Creative/Spectator players and invulnerable entities remain protected
 by Minecraft's normal combat rules. There is no player-only target whitelist.
@@ -58,7 +61,9 @@ Find **Spawn The Light Saver** in Creative, or use:
 `python3 scripts/generate_light_saver_model.py` regenerates its geometry,
 animation and original texture. The build checks cover target exclusions,
 packaged resources, sword attachment and proportions. **No in-game test was
-run on this computer**, as requested. On the kids' laptop, import 1.1.0,
+run on this computer**, as requested. The user confirmed that 1.1.0 flies and
+attacks other mobs, but ignores Survival players. Version 1.1.1 fixes the
+player filter and needs a laptop retest. On the kids' laptop, import 1.1.1,
 activate both Horror Kids packs, and check the appearance, free flight and
 lunges in a Normal test world. Use Survival to check player attacks, then
 spawn a chicken, zombie, Vex and another Light Saver: all except the other
@@ -389,7 +394,7 @@ all downloads use that hostname, with no external scripts, fonts, analytics,
 or GitHub sign-in. Minecraft's own sign-in/services are separate.
 
 After editing and testing, bump the changed mod's version (the initial split
-uses Kit Crafting 1.3.0; The Light Saver uses Horror Kids 1.1.0), commit the changes, then
+uses Kit Crafting 1.3.0; The Light Saver update uses Horror Kids 1.1.1), commit the changes, then
 publish from `main`:
 
 ```sh
